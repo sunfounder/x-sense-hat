@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Get Started With Raspberry Pi &mdash; x-sense-hat  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Python Programming" href="Programming_python.html" />
+    <link rel="prev" title="For Traditional Programming Users" href="For_Traditional_Programming_Users.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> x-sense-hat
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Components_List.html">Components List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Burning_System.html">Burning System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assembling.html">Assembling</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Programming.html">Programming</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Get Started With Raspberry Pi</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#connect-the-raspberry-pi-to-the-internet">Connect the Raspberry Pi to the Internet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-the-ip-address">Get the IP Address</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#remote-control">Remote Control</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Programming_python.html">Python Programming</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">x-sense-hat</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="Programming.html">Programming</a> &raquo;</li>
+        
+          <li><a href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a> &raquo;</li>
+        
+      <li>Get Started With Raspberry Pi</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Get_Started_With_Raspberry_Pi.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="get-started-with-raspberry-pi">
+<h1>Get Started With Raspberry Pi<a class="headerlink" href="#get-started-with-raspberry-pi" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="connect-the-raspberry-pi-to-the-internet">
+<h2>Connect the Raspberry Pi to the Internet<a class="headerlink" href="#connect-the-raspberry-pi-to-the-internet" title="Permalink to this headline">¶</a></h2>
+<p>You need to modify a Wi-Fi configuration file wpa_supplicant.conf in the Micro SD
+card by your PC that is located in the directory /etc/wpa_supplicant/.</p>
+<p>If your personal computer is working on a linux system, you can access the directory
+directly to modify the configuration file; however, if your PC use Windows system,
+then you can’t access the directory and what you need next is to go to the directory,
+/boot/ to create a new file with the same name,
+<strong>wpa_supplicant.conf</strong>
+.</p>
+<a class="reference internal image-reference" href="_images/start1.png"><img alt="_images/start1.png" class="align-center" src="_images/start1.png" style="width: 400px;" /></a>
+<p>Input the following content in the file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=GB
+network={
+ssid=”Wi-Fi-A”
+psk=”Sunfounder”
+key_mgmt=WPA-PSK
+priority=1
+}
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to replace “Wi-Fi-A” with your custom name of WiFi and “Sunfounder” with your password.</p>
+</div>
+<p>By doing these, the Raspbian system will move this file to the target directory automatically to
+overwrite the original Wi-Fi configuration file when it runs next time.</p>
+<p>Now, the Raspbian system is configured. When the Micro SD card is inserted into the
+Raspberry Pi, you can use it immediately.</p>
+</div>
+<div class="section" id="get-the-ip-address">
+<h2>Get the IP Address<a class="headerlink" href="#get-the-ip-address" title="Permalink to this headline">¶</a></h2>
+<p>After the Raspberry Pi is connected to Wi-Fi, we need to get the IP address of it. There
+are many ways to know the IP address, and two of them are listed as follows.</p>
+<div class="section" id="checking-via-router">
+<h3>Checking via Router<a class="headerlink" href="#checking-via-router" title="Permalink to this headline">¶</a></h3>
+<p>If you have permission to log in the router (such as a home network), you can check
+the addresses assigned to Raspberry Pi on the admin interface of router.</p>
+<p>The default hostname of the system, Raspbian is raspberrypi, and you need to find it.
+(If you are using ArchLinuxARM system, please find alarmpi.)</p>
+</div>
+<div class="section" id="network-segment-scanning">
+<h3>Network Segment Scanning<a class="headerlink" href="#network-segment-scanning" title="Permalink to this headline">¶</a></h3>
+<p>You can also use network scanning to look up the IP address of Raspberry Pi. You can
+apply the software,
+<strong>Advanced IP scanner</strong>
+and so on.</p>
+<p>Scan the IP range set, and the name of all connected devices will be displayed.
+Similarly, the default hostname of the Raspbian system is raspberrypi, now you need to
+find the hostname.</p>
+</div>
+</div>
+<div class="section" id="remote-control">
+<h2>Remote Control<a class="headerlink" href="#remote-control" title="Permalink to this headline">¶</a></h2>
+<p>We can open the Bash Shell of Raspberry Pi by applying SSH. Bash is the standard default
+shell of Linux. The Shell itself is a program written in C that is the bridge linking
+the customers and Unix/Linux. Moreover, it can help to complete most of the work
+needed.</p>
+<div class="section" id="for-linux-or-mac-os-x-users">
+<h3>For Linux or/Mac OS X Users<a class="headerlink" href="#for-linux-or-mac-os-x-users" title="Permalink to this headline">¶</a></h3>
+<p>1.Go to Applications-&gt;Utilities, find the Terminal, and open it.</p>
+<a class="reference internal image-reference" href="_images/start2.png"><img alt="_images/start2.png" class="align-center" src="_images/start2.png" style="width: 500px;" /></a>
+<p>2.Type in ssh <a class="reference external" href="mailto:pi&#37;&#52;&#48;ip_address">pi<span>&#64;</span>ip_address</a>. “pi” is your username and “ip_address” is your IP ad-
+dress. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="n">pi</span><span class="o">@</span><span class="mf">192.168</span><span class="o">.</span><span class="mf">18.197</span>
+</pre></div>
+</div>
+<p>3.Input ”yes”.</p>
+<a class="reference internal image-reference" href="_images/start3.png"><img alt="_images/start3.png" class="align-center" src="_images/start3.png" style="width: 500px;" /></a>
+<p>4.Input the passcode and the default password is “raspberry”.</p>
+<a class="reference internal image-reference" href="_images/start4.png"><img alt="_images/start4.png" class="align-center" src="_images/start4.png" style="width: 500px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you input the password, the characters do not display on window accordingly, which is normal. What you need is to input the correct passcode.</p>
+</div>
+<p>5.We now get the Raspberry Pi connected and are ready to go to the next step.</p>
+<a class="reference internal image-reference" href="_images/start5.png"><img alt="_images/start5.png" class="align-center" src="_images/start5.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="for-windows-users">
+<h3>For Windows Users<a class="headerlink" href="#for-windows-users" title="Permalink to this headline">¶</a></h3>
+<p>If you’re a Windows user, you can use SSH with the application of some software.
+Here, we recommend PuTTY.</p>
+<p>1.Download PuTTY.</p>
+<p>2.Open PuTTY and click Session on the left tree-alike structure. Enter the IP address
+of the RPi in the text box under Host Name (or IP address) and 22 under Port (by default it is 22).
+Click Open.</p>
+<a class="reference internal image-reference" href="_images/start6.png"><img alt="_images/start6.png" class="align-center" src="_images/start6.png" style="width: 400px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you first log in to the Raspberry Pi with the IP address, there prompts a security reminder. Just click Yes.</p>
+</div>
+<p>3.When the PuTTY window prompts “login as:”, type in “pi” (the user name of the
+RPi), and password: “raspberry” (the default one, if you haven’t changed it).</p>
+<a class="reference internal image-reference" href="_images/start7.png"><img alt="_images/start7.png" class="align-center" src="_images/start7.png" style="width: 500px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you input the password, the characters do not display on window accordingly, which is normal. What you need is to input the correct passcode.</p>
+</div>
+<p>4.Here, we get the Raspberry Pi connected and it is time to conduct the next steps.</p>
+<a class="reference internal image-reference" href="_images/start8.png"><img alt="_images/start8.png" class="align-center" src="_images/start8.png" style="width: 500px;" /></a>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Programming_python.html" class="btn btn-neutral float-right" title="Python Programming" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="For_Traditional_Programming_Users.html" class="btn btn-neutral float-left" title="For Traditional Programming Users" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, sunfounder.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
