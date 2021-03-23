@@ -117,12 +117,12 @@ FTP. Rename the music file in the function background_music('spry.mp3').
 
 在X Sense HAT的RGB点阵屏上画一个点、一条直线、一个矩形和一个圆。
 
-7.Calibrate_the_MPU9250.py
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+7.Calibrate_the_Accelerometer_and_Gyroscope.py
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The InvenSense MPU-9250 is a System in Package (SiP) that combines two chips: the MPU-6500 three-axis 
 accelerometer and three-axis gyroscope; and the AK8963 three-axis magnetometer.
-在使用MPU9250模块之前，我们需要对它进行校准。
+首先我们对accelerometer and gyroscope进行校准。
 
 下图是MPU9250模块映射到X Sense HAT上的x轴，y轴和z轴,在校准MPU9250模块时，我们需要用到这个坐标图。
 
@@ -130,10 +130,13 @@ accelerometer and three-axis gyroscope; and the AK8963 three-axis magnetometer.
   :width: 400
   :align: center
 
-下载这份代码，将X Sense HAT放在水平桌面上，打开A开关，2秒后关闭A开关，校准完成。
+下载这份代码，将X Sense HAT放在水平桌面上，等待2秒后，校准完成。最后按 ``Ctrl`` + ``C`` 退出代码的运行。
 X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不同轴上的0度值点。
 
-关闭A开关，打开B开关(不运行同时打开两个开关进行MP9250模块校准)。将X Sense HAT沿着y轴顺时针旋转720°，
+8.Calibrate_the_Magnetometer.py
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+下载这份代码，将X Sense HAT沿着y轴顺时针旋转720°，
 再沿着y轴逆时针旋转720°。这个过程大概需要用时15S以上，请控制好转速。
 
 .. image:: img/tip35.jpg
@@ -147,14 +150,14 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
   :width: 400
   :align: center
 
-最后将X Sense HAT沿着z轴顺时针旋转720°，再沿着z轴逆时针旋转720°。关闭开关B，完成校准。
+最后将X Sense HAT沿着z轴顺时针旋转720°，再沿着z轴逆时针旋转720°，校准完成。最后按 ``Ctrl`` + ``C`` 退出代码的运行。
 这个过程需要用时15S以上，请控制转速。
 
 .. image:: img/tip37.jpg
   :width: 400
   :align: center
 
-8.Read_from_MPU9250.py
+9.Read_from_MPU9250.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 校准完MPU9250模块之后，我们来打印MPU9250模块读取到的数据。
@@ -247,7 +250,7 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
         print("%s"%(imu.read("mag","x")))
         delay(100)
 
-9.Know_the_Direction.py
+10.Know_the_Direction.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 我们把X Sense HAT制作成一个指南针，这样我们就不会迷失方向了。
@@ -284,7 +287,7 @@ quadrant是将指南针的方向八等分，我们可以借助azimuth来划分�
     print("%s"%(imu.magnetic_angle('quadrant')))
     delay(100)
 
-10.Attitude_Angle.py
+11.Attitude_Angle.py
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 X Sense HAT能计算当前位置的姿态角，这样我们就能判断X Sense HAT的平衡状态。
@@ -316,47 +319,47 @@ X Sense HAT能计算当前位置的姿态角，这样我们就能判断X Sense H
   :width: 400
   :align: center
 
-11.Make_Gif.py
+12.Make_Gif.py
 ^^^^^^^^^^^^^^^^
 
 将多幅图像数据存于一起，并逐帧显示到RGB点阵上，这么我们就能在X Sense HAT上做一个简单的Gif动画。
 
-12.Spirit_Level.py
+13.Spirit_Level.py
 ^^^^^^^^^^^^^^^^^^^^
 
 将X Sense HAT做成一个水平仪。通过读取roll角和pitch角的变化，我们可以判断X Sense HAT当前是否位于水平状态。
 
-13.Gravity_Ball_Game.py
+14.Gravity_Ball_Game.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 接下来我们在X Sense HAT上制作一个重力小球的游戏。按下摇杆后，游戏开始。如果RGB点阵屏上的小球碰到边缘，则游戏结束。
 
-14.Compass.py
+15.Compass.py
 ^^^^^^^^^^^^^^^
 
 我们将X Sense HAT制作成一个指南针，在RGB点阵上画一个圆，然后用绿点表示当前方向，红点表示正北方向。
 
-15.Smart_Sensor_Hat.py
+16.Smart_Sensor_Hat.py
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 我们把X Sense HAT的功能集成到一个菜单界面里，按住摇杆的方向键选择功能选项，按下摇杆则执行当前功能选项。
 
-16.bugs_jump.py
+17.bugs_jump.py
 ^^^^^^^^^^^^^^^^^^
 
 这是一个跳跃障碍物游戏，通过摇杆的上控制虫子的跳跃动作来躲避会变速障碍物
 
-17.gluttonous_snake.py
+18.gluttonous_snake.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 这是一个通过摇杆进行的贪吃蛇游戏，规则是20秒内尽可能多的吃绿色点，吃到自己的身体，分会归零
 
-18.gravity_ball.py
+19.gravity_ball.py
 ^^^^^^^^^^^^^^^^^^^^^^
 
 这是一个靠重力感应去控制方块吃点的游戏，触碰边界会一直扣分，规定时间内，吃的点越多，分数越高
 
-19.pattern.py
+20.pattern.py
 ^^^^^^^^^^^^^^^^
 
 运行代码后，RGB点阵屏上会显示一个有趣的图案。
