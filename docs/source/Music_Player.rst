@@ -10,19 +10,33 @@ TIPS
 You can choose different background music in the block drop-down menu to let X Sense HAT play.
 
 .. image:: img/tip20.png
-  :width: 330
+  :width: 510
   :align: center
 
 Adjust the volume in the range "0 ~ 100".
 
 .. image:: img/tip21.png
-  :width: 215
+  :width: 500
+  :align: center
+
+使用这个块可以将输入的参数限制在一个有上限和下限的区间里。
+
+.. image:: img/tip61.png
+  :width: 460
   :align: center
 
 To achieve conditional judgment of “if” type, you need to use an if do block.
 
 .. image:: img/tip31.png
-  :width: 120
+  :width: 150
+  :align: center
+
+When you need to implement multiple conditional judgments, you will have to change if do into if else do or else if do.
+
+This can be achieved by clicking on the 左上角 icon.
+
+.. image:: img/tip73.png
+  :width: 420
   :align: center
 
 EXAMPLE

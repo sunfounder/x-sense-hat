@@ -89,21 +89,33 @@
 <li class="toctree-l1"><a class="reference internal" href="Components_List.html">Components List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Burning_System.html">Burning System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Assembling.html">Assembling</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Programming.html">Programming</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#downlaod-and-install-the-app">Downlaod and Install the APP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#get-started-with-the-app">Get Started with the APP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#run-your-first-code">Run Your First Code</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="For_Ezblock_Studio_User.html#learn-to-program">Learn to Program</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="For_Block_User.html">For Block User</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">For Python User</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="For_Ezblock_Studio_User.html#introduce-ezblock-studio">Introduce Ezblock Studio</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="For_Ezblock_Studio_User.html#programming">Programming</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="For_Block_User.html">For Block User</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">For Python User</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#draw-a-graphic">Draw_a_Graphic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-the-vibration-motor">Test_the_Vibration_Motor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-temperature">Display_Temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sound-effect">Sound_Effect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#music-player">Music_Player</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#point-line-rectangle-circle">Point_Line_Rectangle_Circle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#calibrate-the-mpu9250">Calibrate_the_MPU9250</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#read-from-mpu9250">Read_from_MPU9250</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#know-the-direction">Know_the_Direction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attitude-angle">Attitude_Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-gif">Make_Gif</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spirit-level">Spirit_Level</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gravity-ball-game">Gravity_Ball_Game</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compass">Compass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smart-sensor-hat">Smart_Sensor_Hat</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a></li>
 </ul>
 
             
@@ -151,8 +163,6 @@
   <ul class="wy-breadcrumbs">
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="Programming.html">Programming</a> &raquo;</li>
         
           <li><a href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a> &raquo;</li>
         
@@ -294,14 +304,14 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
 <a class="reference internal image-reference" href="_images/tip71.png"><img alt="_images/tip71.png" class="align-center" src="_images/tip71.png" style="width: 400px;" /></a>
 <p>azimuth是从某点的指北方向线起，依顺时针方向到目标方向线之间的水平夹角（指南针的外圈数值）。
 根据得出的azimuth，我们就可以知道当前的位置，例如0度就是正北方向，30度就是北偏东30度角方向。</p>
-<a class="reference internal image-reference" href="_images/tip47.png"><img alt="_images/tip47.png" class="align-center" src="_images/tip47.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/tip47.png"><img alt="_images/tip47.png" class="align-center" src="_images/tip47.png" style="width: 400px;" /></a>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">magnetic_angle</span><span class="p">(</span><span class="s1">&#39;azimuth&#39;</span><span class="p">)))</span>
   <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>quadrant是将指南针的方向八等分，我们可以借助azimuth来划分这八个区域，例如22.5度-67.5度之间就是NE方向，
-而67.5度-112.5之间就是E方向。</p>
+<p>quadrant是将指南针的方向八等分，我们可以借助azimuth来划分这八个区域，例如22.5度和67.5度之间就是NE方向，
+而67.5度和112.5度之间就是E方向。</p>
 <a class="reference internal image-reference" href="_images/tip68.jpg"><img alt="_images/tip68.jpg" class="align-center" src="_images/tip68.jpg" style="width: 500px;" /></a>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">magnetic_angle</span><span class="p">(</span><span class="s1">&#39;quadrant&#39;</span><span class="p">)))</span>
@@ -318,10 +328,16 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
 大拇指指向x轴正半轴的方向，此时四根手指指向的方向就是roll角的正方向。
 同理我们用右手握住y轴，将大拇指指向y轴正半轴的方向，此时四根手指指向的方向就是pitch角的正方向。</p>
 <a class="reference internal image-reference" href="_images/tip57.jpg"><img alt="_images/tip57.jpg" class="align-center" src="_images/tip57.jpg" style="width: 400px;" /></a>
-<p>下载这份代码，水平放置时，打印窗口将显示0。
+<p>下载当前代码，水平放置时，打印窗口将显示0。
 我们将X Sense HAT沿着x轴顺时针旋转30度，此时打印窗口将显示30。</p>
 <a class="reference internal image-reference" href="_images/tip70.jpg"><img alt="_images/tip70.jpg" class="align-center" src="_images/tip70.jpg" style="width: 400px;" /></a>
-<p>然后将X Sense HAT沿着y逆时针旋转30度，此时打印窗口将显示-30。</p>
+<p>修改代码内容，然后重新下载。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">get_posture_angle</span><span class="p">(</span><span class="n">aram</span> <span class="o">=</span> <span class="s2">&quot;pitch&quot;</span><span class="p">)))</span>
+  <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>水平放置时，打印窗口仍然显示0。我们将X Sense HAT沿着y逆时针旋转30度，此时打印窗口将显示-30。</p>
 <a class="reference internal image-reference" href="_images/tip69.jpg"><img alt="_images/tip69.jpg" class="align-center" src="_images/tip69.jpg" style="width: 400px;" /></a>
 </div>
 <div class="section" id="make-gif">

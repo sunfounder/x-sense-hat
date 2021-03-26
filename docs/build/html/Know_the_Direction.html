@@ -89,21 +89,33 @@
 <li class="toctree-l1"><a class="reference internal" href="Components_List.html">Components List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Burning_System.html">Burning System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Assembling.html">Assembling</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Programming.html">Programming</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#downlaod-and-install-the-app">Downlaod and Install the APP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#get-started-with-the-app">Get Started with the APP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#run-your-first-code">Run Your First Code</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="For_Ezblock_Studio_User.html#learn-to-program">Learn to Program</a><ul class="current">
-<li class="toctree-l4 current"><a class="reference internal" href="For_Block_User.html">For Block User</a></li>
-<li class="toctree-l4"><a class="reference internal" href="For_Python_User.html">For Python User</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="For_Ezblock_Studio_User.html#introduce-ezblock-studio">Introduce Ezblock Studio</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="For_Ezblock_Studio_User.html#programming">Programming</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="For_Block_User.html">For Block User</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Draw_a_Graphic.html">Draw a Graphic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Test_the_Vibration_Motor.html">Test the Vibration Motor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Display_Temperature.html">Display Temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sound_Effect.html">Sound Effect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Music_Player.html">Music Player</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Point_Line_Rectangle_Circle.html">Point Line Rectangle Circle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Calibrate_the_Mpu9250.html">Calibrate the MPU9250</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Read_from_Mpu9250.html">Read from MPU9250</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Know the Direction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Attitude_Angle.html">Attitude Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Make_Gif.html">Make Gif</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Spirit_Level.html">Spirit Level</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Gravity_Ball_Game.html">Gravity Ball Game</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Compass.html">Compass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Smart_Sensor_Hat.html">Smart Sensor Hat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="For_Python_User.html">For Python User</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a></li>
 </ul>
 
             
@@ -152,8 +164,6 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="Programming.html">Programming</a> &raquo;</li>
-        
           <li><a href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a> &raquo;</li>
         
           <li><a href="For_Block_User.html">For Block User</a> &raquo;</li>
@@ -185,7 +195,7 @@
 <p>绿色箭头表示X Sense HAT检测的方向，你可以通过它来判断当前的位置。</p>
 <a class="reference internal image-reference" href="_images/tip71.png"><img alt="_images/tip71.png" class="align-center" src="_images/tip71.png" style="width: 400px;" /></a>
 <p>这个块读取当前指南针方向，修改下拉选项，可以选择azimuth或者quadrant。</p>
-<a class="reference internal image-reference" href="_images/tip46.png"><img alt="_images/tip46.png" class="align-center" src="_images/tip46.png" style="width: 420px;" /></a>
+<a class="reference internal image-reference" href="_images/tip46.png"><img alt="_images/tip46.png" class="align-center" src="_images/tip46.png" style="width: 550px;" /></a>
 </div>
 <div class="section" id="example">
 <h2>EXAMPLE<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
@@ -195,13 +205,13 @@
 <h2>azimuth的使用帮助<a class="headerlink" href="#azimuth" title="Permalink to this headline">¶</a></h2>
 <p>azimuth是从某点的指北方向线起，依顺时针方向到目标方向线之间的水平夹角（指南针的外圈数值）。
 根据得出的azimuth，我们就可以知道当前的位置，例如0度就是正北方向，30度就是北偏东30度角方向。</p>
-<a class="reference internal image-reference" href="_images/tip47.png"><img alt="_images/tip47.png" class="align-center" src="_images/tip47.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="_images/tip47.png"><img alt="_images/tip47.png" class="align-center" src="_images/tip47.png" style="width: 460px;" /></a>
 </div>
 <div class="section" id="quadrant">
 <h2>quadrant的使用帮助<a class="headerlink" href="#quadrant" title="Permalink to this headline">¶</a></h2>
-<p>quadrant是将指南针的方向八等分，我们可以借助azimuth来划分这八个区域，例如22.5度-67.5度之间就是NE方向，
-而67.5度-112.5之间就是E方向。</p>
-<a class="reference internal image-reference" href="_images/tip68.jpg"><img alt="_images/tip68.jpg" class="align-center" src="_images/tip68.jpg" style="width: 500px;" /></a>
+<p>quadrant是将指南针的方向八等分，我们可以借助azimuth来划分这八个区域，例如22.5度和67.5度之间就是NE方向，
+而67.5度和112.5度之间就是E方向。</p>
+<a class="reference internal image-reference" href="_images/tip68.jpg"><img alt="_images/tip68.jpg" class="align-center" src="_images/tip68.jpg" style="width: 530px;" /></a>
 </div>
 </div>
 

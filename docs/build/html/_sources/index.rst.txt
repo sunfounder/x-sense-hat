@@ -9,20 +9,22 @@ TTS（文本转语音），音乐效果，背景音乐）和一个震动马达�
 
 This manual introduces components list, assembling, programming. 如果你是刚使用X Sense HAT的新客户，我们建议
 你从头开始阅读，按照章节顺序一步一步使用X Sense HAT，相信你很快就能上手它。
+为了让你更快地上手X Sense HAT，我们提供了两种不同的编程方式。你可以使用我们的编程软件Ezblock Studio，也可以登录树莓派系统，在Terminal里进行编程。
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     Components_List
     Burning_System
     Assembling
-    Programming
+    For_Ezblock_Studio_User
+    For_Traditional_Programming_Users
 
 Copyright Notice
 =================
 
 All contents including but not limited to texts, images, and code in this manual are owned 
-by the SunFounder Company. You should only use it for personal study,investigation, enjoyment, 
+by the SunFounder Company. You should only use it for personal study, investigation, enjoyment, 
 or other non-commercial or nonprofit purposes, under therelated regulations and copyrights laws, 
 without infringing the legal rights of the author and relevant right holders. For any individual 
 or organization that uses these for commercial profit without permission, the Company reserves the 

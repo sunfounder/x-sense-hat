@@ -1,17 +1,26 @@
 For Ezblock Studio User
 =========================
 
-Downlaod and Install the APP
+Introduce Ezblock Studio
 -----------------------------
 
-Get Started with the APP
---------------------------
+Ezblock Studio is a new open-source platform for building electronic projects and graphical programming.
 
-Run Your First Code
-----------------------
+Ezblock Studio also serves as a coding platform that runs on your phone, tablet and computer. In addition, the Ezblock Studio 
+applies Blocks and Python, making it easier to learn programming. By and large, Ezblock Studio integrates Hardware Simulator, 
+Bluetooth Debugger, IoT Panel and Customizable Remote Controller, which are conducive to the operation of prototyping, debugging, and so on.
 
-Learn to Program
--------------------
+Open App Store (iOS/Mac OS X system) or Play Store (Android/Windows/Linux system), then search and download Ezblock Studio.
+
+.. image:: img/tip72.png
+  :width: 800
+  :align: center
+
+Please get detailed tutorial of Ezblock Studio at: `Get Start with Ezblock Studio <https://docs.sunfounder.com/ezblock>`_
+.
+
+Programming
+--------------
 
 如果你是初学者及没有任何编程基础，建议先学习Block编程方式，你只需要通过简单的拖拽就可以快速上手X Sense HAT。
 当你对X Sense HAT有足够的了解后，或者当你想挑战自己的Python编程能力，你就可以选用Python的编程方式。

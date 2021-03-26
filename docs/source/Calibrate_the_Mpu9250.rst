@@ -1,5 +1,5 @@
 Calibrate the MPU9250
-======================
+=======================
 
 The InvenSense MPU-9250 is a System in Package (SiP) that combines two chips: the
 MPU-6500 three-axis accelerometer and three-axis gyroscope; and the AK8963 three-
@@ -23,13 +23,13 @@ Here we drag a Switch from the Bluetooth control page to 开启mpu9250模块的�
 这个块用来开启 gyroscope 和 accelerometer 的校准。
 
 .. image:: img/tip32.png
-  :width: 300
+  :width: 500
   :align: center
 
 这个块用来开启 magnetometer 的校准。
 
 .. image:: img/tip33.png
-  :width: 380
+  :width: 360
   :align: center
 
 EXAMPLE
@@ -57,7 +57,7 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
 校准 magnetometer
 ------------------
 
-关闭A开关，打开B开关(不运行同时打开两个开关进行MP9250模块校准)。将X Sense HAT沿着y轴顺时针旋转720°，
+关闭A开关，然后打开B开关(进行MP9250模块校准时，不能同时打开两个开关)。将X Sense HAT沿着y轴顺时针旋转720°，
 再沿着y轴逆时针旋转720°。这个过程大概需要用时15S以上，请控制好转速。
 
 .. image:: img/tip35.jpg

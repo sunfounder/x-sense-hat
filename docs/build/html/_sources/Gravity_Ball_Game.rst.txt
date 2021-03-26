@@ -6,23 +6,23 @@ Gravity Ball Game
 TIPS
 -----
 
-.. image:: img/tip52.png
-  :width: 260
-  :align: center
-
 使用这个块来创建一个新的循环语句。
 
-.. image:: img/tip53.png
-  :width: 200
+.. image:: img/tip52.png
+  :width: 350
   :align: center
 
 中断最近的一次循环，但是不能退出Forever语句的循环。
 
-.. image:: img/tip54.png
-  :width: 260
+.. image:: img/tip53.png
+  :width: 280
   :align: center
 
 Here, we also use to do something block to create a new funtion, but the block does not return any value.
+
+.. image:: img/tip54.png
+  :width: 380
+  :align: center
 
 EXAMPLE
 ---------

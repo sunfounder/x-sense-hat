@@ -89,20 +89,33 @@
 <li class="toctree-l1"><a class="reference internal" href="Components_List.html">Components List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Burning_System.html">Burning System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Assembling.html">Assembling</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Programming.html">Programming</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#downlaod-and-install-the-app">Downlaod and Install the APP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#get-started-with-the-app">Get Started with the APP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="For_Ezblock_Studio_User.html#run-your-first-code">Run Your First Code</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="For_Ezblock_Studio_User.html#learn-to-program">Learn to Program</a><ul class="current">
-<li class="toctree-l4 current"><a class="reference internal" href="For_Block_User.html">For Block User</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="For_Ezblock_Studio_User.html#introduce-ezblock-studio">Introduce Ezblock Studio</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="For_Ezblock_Studio_User.html#programming">Programming</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="For_Block_User.html">For Block User</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Draw_a_Graphic.html">Draw a Graphic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Test_the_Vibration_Motor.html">Test the Vibration Motor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Display_Temperature.html">Display Temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sound_Effect.html">Sound Effect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Music_Player.html">Music Player</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Point_Line_Rectangle_Circle.html">Point Line Rectangle Circle</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Calibrate the MPU9250</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Read_from_Mpu9250.html">Read from MPU9250</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Know_the_Direction.html">Know the Direction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Attitude_Angle.html">Attitude Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Make_Gif.html">Make Gif</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Spirit_Level.html">Spirit Level</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Gravity_Ball_Game.html">Gravity Ball Game</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Compass.html">Compass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Smart_Sensor_Hat.html">Smart Sensor Hat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="For_Python_User.html">For Python User</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a></li>
 </ul>
 
             
@@ -151,8 +164,6 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="Programming.html">Programming</a> &raquo;</li>
-        
           <li><a href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a> &raquo;</li>
         
           <li><a href="For_Block_User.html">For Block User</a> &raquo;</li>
@@ -188,9 +199,9 @@ axis magnetometer.在使用MPU9250模块之前，我们需要对不同的芯片�
 <p>这个块读取开关的开合状态。</p>
 <a class="reference internal image-reference" href="_images/tip30.png"><img alt="_images/tip30.png" class="align-center" src="_images/tip30.png" style="width: 260px;" /></a>
 <p>这个块用来开启 gyroscope 和 accelerometer 的校准。</p>
-<a class="reference internal image-reference" href="_images/tip32.png"><img alt="_images/tip32.png" class="align-center" src="_images/tip32.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tip32.png"><img alt="_images/tip32.png" class="align-center" src="_images/tip32.png" style="width: 500px;" /></a>
 <p>这个块用来开启 magnetometer 的校准。</p>
-<a class="reference internal image-reference" href="_images/tip33.png"><img alt="_images/tip33.png" class="align-center" src="_images/tip33.png" style="width: 380px;" /></a>
+<a class="reference internal image-reference" href="_images/tip33.png"><img alt="_images/tip33.png" class="align-center" src="_images/tip33.png" style="width: 360px;" /></a>
 </div>
 <div class="section" id="example">
 <h2>EXAMPLE<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
@@ -208,7 +219,7 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
 </div>
 <div class="section" id="magnetometer">
 <h2>校准 magnetometer<a class="headerlink" href="#magnetometer" title="Permalink to this headline">¶</a></h2>
-<p>关闭A开关，打开B开关(不运行同时打开两个开关进行MP9250模块校准)。将X Sense HAT沿着y轴顺时针旋转720°，
+<p>关闭A开关，然后打开B开关(进行MP9250模块校准时，不能同时打开两个开关)。将X Sense HAT沿着y轴顺时针旋转720°，
 再沿着y轴逆时针旋转720°。这个过程大概需要用时15S以上，请控制好转速。</p>
 <a class="reference internal image-reference" href="_images/tip35.jpg"><img alt="_images/tip35.jpg" class="align-center" src="_images/tip35.jpg" style="width: 400px;" /></a>
 <p>然后将X Sense HAT沿着x轴顺时针旋转720°，再沿着x轴逆时针旋转720°。

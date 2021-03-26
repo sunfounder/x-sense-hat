@@ -6,11 +6,11 @@ X Sense HAT能计算当前位置的姿态角，这样我们就能判断X Sense H
 TIPS
 ------
 
-.. image:: img/tip48.png
-  :width: 245
-  :align: center
-
 你可以通过此块读取X Sense HAT的姿态角，修改下拉菜单选项，然后选择读取roll角或者pitch角。
+
+.. image:: img/tip48.png
+  :width: 350
+  :align: center
 
 EXAMPLE
 ---------
@@ -36,14 +36,20 @@ EXAMPLE
   :width: 400
   :align: center
 
-下载这份代码，水平放置时，打印窗口显示0。
+下载当前代码，水平放置时，打印窗口显示0。
 我们将X Sense HAT沿着x轴顺时针旋转30度，此时打印窗口将显示30。
 
 .. image:: img/tip70.jpg
   :width: 400
   :align: center
 
-然后我们将X Sense HAT沿着y逆时针旋转30度，此时打印窗口将显示-30。
+修改代码内容，然后重新下载。
+
+.. image:: img/tip74.png
+  :width: 550
+  :align: center
+
+水平放置时，打印窗口仍然显示0。我们将X Sense HAT沿着y逆时针旋转30度，此时打印窗口将显示-30。
 
 .. image:: img/tip69.jpg
   :width: 400

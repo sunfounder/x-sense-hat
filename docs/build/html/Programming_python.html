@@ -88,14 +88,33 @@
 <li class="toctree-l1"><a class="reference internal" href="Components_List.html">Components List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Burning_System.html">Burning System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Assembling.html">Assembling</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Programming.html">Programming</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Get_Started_With_Raspberry_Pi.html">Get Started With Raspberry Pi</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Python Programming</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#download-the-code">Download the Code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#stop-ezblock-service">Stop Ezblock Service</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#python-code-control">Python Code Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Get_Started_With_Raspberry_Pi.html">Get Started With Raspberry Pi</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Python Programming</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#download-the-code">Download the Code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stop-ezblock-service">Stop Ezblock Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#python-code-control">Python Code Control</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#draw-a-graphic-py">1.Draw_a_Graphic.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-the-vibration-motor-py">2.Test_the_Vibration_Motor.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-temperature-py">3.Display_Temperature.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sound-effect-py">4.Sound_Effect.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#music-player-py">5.Music_Player.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#point-line-rectangle-circle-py">6.Point_Line_Rectangle_Circle.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#calibrate-the-accelerometer-and-gyroscope-py">7.Calibrate_the_Accelerometer_and_Gyroscope.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#calibrate-the-magnetometer-py">8.Calibrate_the_Magnetometer.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#read-from-mpu9250-py">9.Read_from_MPU9250.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#know-the-direction-py">10.Know_the_Direction.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attitude-angle-py">11.Attitude_Angle.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-gif-py">12.Make_Gif.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spirit-level-py">13.Spirit_Level.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gravity-ball-game-py">14.Gravity_Ball_Game.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compass-py">15.Compass.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smart-sensor-hat-py">16.Smart_Sensor_Hat.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bugs-jump-py">17.Bugs_Jump.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gluttonous-snake-py">18.Gluttonous_Snake.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gravity-ball-py">19.Gravity_Ball.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pattern-py">20.Pattern.py</a></li>
 </ul>
 </li>
 </ul>
@@ -149,8 +168,6 @@
   <ul class="wy-breadcrumbs">
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="Programming.html">Programming</a> &raquo;</li>
         
           <li><a href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a> &raquo;</li>
         
@@ -266,7 +283,7 @@ accelerometer and three-axis gyroscope; and the AK8963 three-axis magnetometer.
 首先我们对accelerometer and gyroscope进行校准。</p>
 <p>下图是MPU9250模块映射到X Sense HAT上的x轴，y轴和z轴,在校准MPU9250模块时，我们需要用到这个坐标图。</p>
 <a class="reference internal image-reference" href="_images/tip34.jpg"><img alt="_images/tip34.jpg" class="align-center" src="_images/tip34.jpg" style="width: 400px;" /></a>
-<p>下载这份代码，将X Sense HAT放在水平桌面上，等待2秒后，校准完成。最后按 <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code> 退出代码的运行。
+<p>下载这份代码，将X Sense HAT放在水平桌面上，等待2秒后，按 <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code> 退出代码的运行，校准完成。
 X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不同轴上的0度值点。</p>
 </div>
 <div class="section" id="calibrate-the-magnetometer-py">
@@ -277,7 +294,7 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
 <p>然后将X Sense HAT沿着x轴顺时针旋转720°，再沿着x轴逆时针旋转720°。
 这个过程同样需要用时15S以上，请控制转速。</p>
 <a class="reference internal image-reference" href="_images/tip36.jpg"><img alt="_images/tip36.jpg" class="align-center" src="_images/tip36.jpg" style="width: 400px;" /></a>
-<p>最后将X Sense HAT沿着z轴顺时针旋转720°，再沿着z轴逆时针旋转720°，校准完成。最后按 <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code> 退出代码的运行。
+<p>最后将X Sense HAT沿着z轴顺时针旋转720°，再沿着z轴逆时针旋转720°，按 <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code> 退出代码的运行，校准完成。
 这个过程需要用时15S以上，请控制转速。</p>
 <a class="reference internal image-reference" href="_images/tip37.jpg"><img alt="_images/tip37.jpg" class="align-center" src="_images/tip37.jpg" style="width: 400px;" /></a>
 </div>
@@ -399,19 +416,19 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
 <p>我们把X Sense HAT的功能集成到一个菜单界面里，按住摇杆的方向键选择功能选项，按下摇杆则执行当前功能选项。</p>
 </div>
 <div class="section" id="bugs-jump-py">
-<h3>17.bugs_jump.py<a class="headerlink" href="#bugs-jump-py" title="Permalink to this headline">¶</a></h3>
+<h3>17.Bugs_Jump.py<a class="headerlink" href="#bugs-jump-py" title="Permalink to this headline">¶</a></h3>
 <p>这是一个跳跃障碍物游戏，通过摇杆的上控制虫子的跳跃动作来躲避会变速障碍物</p>
 </div>
 <div class="section" id="gluttonous-snake-py">
-<h3>18.gluttonous_snake.py<a class="headerlink" href="#gluttonous-snake-py" title="Permalink to this headline">¶</a></h3>
+<h3>18.Gluttonous_Snake.py<a class="headerlink" href="#gluttonous-snake-py" title="Permalink to this headline">¶</a></h3>
 <p>这是一个通过摇杆进行的贪吃蛇游戏，规则是20秒内尽可能多的吃绿色点，吃到自己的身体，分会归零</p>
 </div>
 <div class="section" id="gravity-ball-py">
-<h3>19.gravity_ball.py<a class="headerlink" href="#gravity-ball-py" title="Permalink to this headline">¶</a></h3>
+<h3>19.Gravity_Ball.py<a class="headerlink" href="#gravity-ball-py" title="Permalink to this headline">¶</a></h3>
 <p>这是一个靠重力感应去控制方块吃点的游戏，触碰边界会一直扣分，规定时间内，吃的点越多，分数越高</p>
 </div>
 <div class="section" id="pattern-py">
-<h3>20.pattern.py<a class="headerlink" href="#pattern-py" title="Permalink to this headline">¶</a></h3>
+<h3>20.Pattern.py<a class="headerlink" href="#pattern-py" title="Permalink to this headline">¶</a></h3>
 <p>运行代码后，RGB点阵屏上会显示一个有趣的图案。</p>
 </div>
 </div>

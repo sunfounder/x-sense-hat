@@ -130,7 +130,7 @@ accelerometer and three-axis gyroscope; and the AK8963 three-axis magnetometer.
   :width: 400
   :align: center
 
-下载这份代码，将X Sense HAT放在水平桌面上，等待2秒后，校准完成。最后按 ``Ctrl`` + ``C`` 退出代码的运行。
+下载这份代码，将X Sense HAT放在水平桌面上，等待2秒后，按 ``Ctrl`` + ``C`` 退出代码的运行，校准完成。
 X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不同轴上的0度值点。
 
 8.Calibrate_the_Magnetometer.py
@@ -150,7 +150,7 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
   :width: 400
   :align: center
 
-最后将X Sense HAT沿着z轴顺时针旋转720°，再沿着z轴逆时针旋转720°，校准完成。最后按 ``Ctrl`` + ``C`` 退出代码的运行。
+最后将X Sense HAT沿着z轴顺时针旋转720°，再沿着z轴逆时针旋转720°，按 ``Ctrl`` + ``C`` 退出代码的运行，校准完成。
 这个过程需要用时15S以上，请控制转速。
 
 .. image:: img/tip37.jpg
@@ -344,22 +344,22 @@ X Sense HAT能计算当前位置的姿态角，这样我们就能判断X Sense H
 
 我们把X Sense HAT的功能集成到一个菜单界面里，按住摇杆的方向键选择功能选项，按下摇杆则执行当前功能选项。
 
-17.bugs_jump.py
+17.Bugs_Jump.py
 ^^^^^^^^^^^^^^^^^^
 
 这是一个跳跃障碍物游戏，通过摇杆的上控制虫子的跳跃动作来躲避会变速障碍物
 
-18.gluttonous_snake.py
+18.Gluttonous_Snake.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 这是一个通过摇杆进行的贪吃蛇游戏，规则是20秒内尽可能多的吃绿色点，吃到自己的身体，分会归零
 
-19.gravity_ball.py
+19.Gravity_Ball.py
 ^^^^^^^^^^^^^^^^^^^^^^
 
 这是一个靠重力感应去控制方块吃点的游戏，触碰边界会一直扣分，规定时间内，吃的点越多，分数越高
 
-20.pattern.py
+20.Pattern.py
 ^^^^^^^^^^^^^^^^
 
 运行代码后，RGB点阵屏上会显示一个有趣的图案。

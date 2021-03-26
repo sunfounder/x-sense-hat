@@ -11,20 +11,20 @@ TIPS
 在x轴上的加速度值。
 
 .. image:: img/tip38.png
-  :width: 500
+  :width: 620
   :align: center
 
 The Print function can print data such as variables and text for easy debugging.
 
 .. image:: img/tip39.png
-  :width: 200
+  :width: 250
   :align: center
 
 The data printed by the Print function will appear in the Debug Monitor on the left. 
 In other interfaces, you can also click on the Debug Monitor in the upper right corner.
 
 .. image:: img/tip40.png
-  :width: 340
+  :width: 400
   :align: center
 
 EXAMPLE

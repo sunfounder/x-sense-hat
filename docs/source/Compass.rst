@@ -6,29 +6,29 @@ Compass
 TIPS
 -----
 
-.. image:: img/tip58.png
-  :width: 220
-  :align: center
-
 You can use List block to simplify your program. 这里我们创建了一个列表来记录圆上每个点的坐标。
 
-.. image:: img/tip59.png
-  :width: 295
+.. image:: img/tip58.png
+  :width: 270
   :align: center
 
 Get the elements in the list. Such as in list “A” get #2 will get the value of the 2nd element.
 修改第一个下拉选项，可以对列表进行不同的操作。修改第二个下拉选项，可以获取列表中不同位置的元素。
 
-.. image:: img/tip60.png
-  :width: 280
+.. image:: img/tip59.png
+  :width: 410
   :align: center
 
 使用这个块可以对除法算式的结果进行取余。
 
+.. image:: img/tip60.png
+  :width: 390
+  :align: center
+
 EXAMPLE
 ---------
 
-.. image:: img/example14.png
+.. image:: img/example14.jpg
   :width: 900
   :align: center
 

@@ -192,7 +192,7 @@ azimuth是从某点的指北方向线起，依顺时针方向到目标方向线�
 根据得出的azimuth，我们就可以知道当前的位置，例如0度就是正北方向，30度就是北偏东30度角方向。
 
 .. image:: img/tip47.png
-  :width: 500
+  :width: 400
   :align: center
 
 .. code-block:: python
@@ -201,8 +201,8 @@ azimuth是从某点的指北方向线起，依顺时针方向到目标方向线�
     print("%s"%(imu.magnetic_angle('azimuth')))
     delay(100)
 
-quadrant是将指南针的方向八等分，我们可以借助azimuth来划分这八个区域，例如22.5度-67.5度之间就是NE方向，
-而67.5度-112.5之间就是E方向。
+quadrant是将指南针的方向八等分，我们可以借助azimuth来划分这八个区域，例如22.5度和67.5度之间就是NE方向，
+而67.5度和112.5度之间就是E方向。
 
 .. image:: img/tip68.jpg
   :width: 500
@@ -233,14 +233,22 @@ X Sense HAT能计算当前位置的姿态角，这样我们就能判断X Sense H
   :width: 400
   :align: center
 
-下载这份代码，水平放置时，打印窗口将显示0。
+下载当前代码，水平放置时，打印窗口将显示0。
 我们将X Sense HAT沿着x轴顺时针旋转30度，此时打印窗口将显示30。
 
 .. image:: img/tip70.jpg
   :width: 400
   :align: center
 
-然后将X Sense HAT沿着y逆时针旋转30度，此时打印窗口将显示-30。
+修改代码内容，然后重新下载。
+
+.. code-block:: python
+
+  def forever():
+    print("%s"%(imu.get_posture_angle(aram = "pitch")))
+    delay(100)
+
+水平放置时，打印窗口仍然显示0。我们将X Sense HAT沿着y逆时针旋转30度，此时打印窗口将显示-30。
 
 .. image:: img/tip69.jpg
   :width: 400
