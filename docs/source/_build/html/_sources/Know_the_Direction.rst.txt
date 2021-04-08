@@ -1,0 +1,49 @@
+Know the Direction
+====================
+
+Now we make the X Sense HAT into a compass so that we don't get lost.
+
+TIPS
+------
+
+The green arrow indicates the detect direction of X Sense HAT, you can use it to judge the current position.
+
+.. image:: img/tip71.png
+  :width: 400
+  :align: center
+
+This block reads the current compass direction, and you can select the Azimuth bearing or Quadrant bearing by modifying the drop-down options.
+
+.. image:: img/tip46.png
+  :width: 550
+  :align: center
+
+EXAMPLE
+----------
+
+.. image:: img/example9.png
+  :width: 650
+  :align: center
+
+Azimuth Bearing
+-----------------
+
+Azimuth Bearing refers to the number on the outer circle and the Azimuth is the angle from the north direction line to the target direction line in a clockwise direction.
+For example, 0 degrees is the direction of true north, and 30 degrees is the direction of 30° east by north.
+
+.. image:: img/tip47.png
+  :width: 460
+  :align: center
+
+Quadrant Bearing
+-------------------
+
+Quadrant Bearing divides the direction of the compass into eight equal parts. For example, the NE direction is between 22.5 degrees and 67.5 degrees.
+And between 67.5 degrees and 112.5 degrees is the E direction.
+
+.. image:: img/tip68.jpg
+  :width: 530
+  :align: center
+
+
+

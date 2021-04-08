@@ -26,8 +26,8 @@ Input the following content in the file:
     update_config=1
     country=GB
     network={
-    ssid=”Wi-Fi-A”
-    psk=”Sunfounder”
+    ssid="Wi-Fi-A"
+    psk="Sunfounder"
     key_mgmt=WPA-PSK
     priority=1
     }

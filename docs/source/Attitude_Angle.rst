@@ -1,12 +1,12 @@
 Attitude Angle
 ===============
 
-X Sense HAT能计算当前位置的姿态角，这样我们就能判断X Sense HAT的平衡状态。
+The X Sense HAT calculates the attitude angle of the current position so that we can know whether the X Sense HAT horizontal or not.
 
 TIPS
 ------
 
-你可以通过此块读取X Sense HAT的姿态角，修改下拉菜单选项，然后选择读取roll角或者pitch角。
+You can read the attitude angle of X Sense HAT through this block, modify the drop-down menu options, and then choose to read roll angle or pitch angle.
 
 .. image:: img/tip48.png
   :width: 350
@@ -19,37 +19,46 @@ EXAMPLE
   :width: 550
   :align: center
 
-使用帮助
----------
+Using help
+------------
 
-这是适用于计算姿态角的坐标系，注意不同轴的正半轴的方向，这对我们判断旋转角度的方向会有帮助。
+This is the coordinate system of the attitude angle.
 
 .. image:: img/tip56.jpg
-  :width: 400
+  :width: 600
   :align: center
+.. note::
 
-姿态角单位符号的判定同样遵循右手螺旋定则，将右手握住x轴，
-大拇指指向x轴正半轴的方向，此时四根手指指向的方向就是roll角的正方向。
-同理我们用右手握住y轴，将大拇指指向y轴正半轴的方向，此时四根手指指向的方向就是pitch角的正方向。
+  Note the positive direction on each axis.
+
+The unit symbol of the attitude angle also follows the right-hand spiral rule. 
+
+Hold the **x-axis** with your right hand and the thumb points in the direction of the positive semi-axis.
+At this time, the direction pointed by the four fingers is the positive direction of the roll angle.
+
+In the same way, hold the **y-axis** with your right hand and the thumb points in the direction of the positive semi-axis.
+At this time, the direction pointed by the four fingers is the positive direction of the **pitch angle**.
+
 
 .. image:: img/tip57.jpg
-  :width: 400
+  :width: 600
   :align: center
 
-下载当前代码，水平放置时，打印窗口显示0。
-我们将X Sense HAT沿着x轴顺时针旋转30度，此时打印窗口将显示30。
+Run the EXAMPLE code, and then place the X Sense HAT horizontally, 0 will be printed on the Debug Monitor.
+
+If you rotate the X Sense HAT 30 degrees clockwise around the **x-axis**, 30 will be printed on the Debug Monitor.
 
 .. image:: img/tip70.jpg
   :width: 400
   :align: center
 
-修改代码内容，然后重新下载。
+Now change the drop-down menu to **pitch**, and then re-run the code.
 
 .. image:: img/tip74.png
   :width: 550
   :align: center
 
-水平放置时，打印窗口仍然显示0。我们将X Sense HAT沿着y逆时针旋转30度，此时打印窗口将显示-30。
+Rotate the X Sense HAT 30 degrees counterclockwise around the **y-axis**, 30 will be printed on the Debug Monitor.
 
 .. image:: img/tip69.jpg
   :width: 400

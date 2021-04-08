@@ -63,22 +63,22 @@ You can run the python codes by the following command:
 
 .. code-block:: python
 
-    sudo python3 1.Draw_a_Graphic.py 
+    sudo python3 1.Display_Graphics.py 
 
-1.Draw_a_Graphic.py
+1.Display_Graphics.py
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-运行代码后，X Sense HAT的点阵屏上会显示一个有趣的小人物。
+Here we will draw a funny character and show a heart on the screen.
 
 2.Test_the_Vibration_Motor.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-运行代码后，X Sense HAT上的电机会振动得越来越快。
+After running the code, the motor on the X Sense HAT will vibrate faster and faster.
 
 3.Display_Temperature.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-将X Sense HAT制作成一个温度计，你可以在RGB点阵上查看温度值。
+At this time the X Sense HAT is a thermometer to display the current temperature.
 
 4.Sound_Effect.py
 ^^^^^^^^^^^^^^^^^^^^^
@@ -106,8 +106,7 @@ the sound effect file in the 6.sound_effect.py.
 5.Music_Player.py
 ^^^^^^^^^^^^^^^^^^^^
 
-In addition to having X Sense HAT play sound effects or speak on specific occasions, you
-can also add background music to it. 使用摇杆的上下方向键来控制音量大小，左右方向键控制音乐的暂停和继续。
+In this example, the X Sense HAT acts as a Music Player, the up and down buttons of the joystick to control the volume of the Music Player and the left and right buttons to control the pause or play of the music.
 
 To add music, you can try to upload your music to the path /home/pi/Music/ via
 FTP. Rename the music file in the function background_music('spry.mp3').
@@ -115,167 +114,244 @@ FTP. Rename the music file in the function background_music('spry.mp3').
 6.Point_Line_Rectangle_Circle.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-在X Sense HAT的RGB点阵屏上画一个点、一条直线、一个矩形和一个圆。
+By creating a coordinate we can draw a point, a line, a rectangle and a circle at the  specified location on the X Sense HAT.
 
 7.Calibrate_the_Accelerometer_and_Gyroscope.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The InvenSense MPU-9250 is a System in Package (SiP) that combines two chips: the MPU-6500 three-axis 
-accelerometer and three-axis gyroscope; and the AK8963 three-axis magnetometer.
-首先我们对accelerometer and gyroscope进行校准。
+The InvenSense MPU9250 is a System in Package (SiP) that combines two chips: the MPU-6500 three-axis Accelerometer and three-axis Gyroscope; and the AK8963 three-axis Magnetometer. 
 
-下图是MPU9250模块映射到X Sense HAT上的x轴，y轴和z轴,在校准MPU9250模块时，我们需要用到这个坐标图。
+Before using the MPU9250 chip, we need to calibrate different chips.
+
+After running the code, place the X Sense HAT horizontally. After 2 seconds, press ``Ctrl`` + ``C`` to exit the operation of the code, and the calibration is completed.
+
+The X Sense HAT records the current horizontal position as a 0 degree point on the different axes of the Accelerometer and Gyroscope.
+
+8.Calibrate_the_Magnetometer.py
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The figure below is the coordinate system that will be used to calibrate the magnetometer.
 
 .. image:: img/tip34.jpg
   :width: 400
   :align: center
 
-下载这份代码，将X Sense HAT放在水平桌面上，等待2秒后，按 ``Ctrl`` + ``C`` 退出代码的运行，校准完成。
-X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不同轴上的0度值点。
-
-8.Calibrate_the_Magnetometer.py
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-下载这份代码，将X Sense HAT沿着y轴顺时针旋转720°，
-再沿着y轴逆时针旋转720°。这个过程大概需要用时15S以上，请控制好转速。
+Download this code, Turn the B switch on（keep switch A off）, rotate the X Sense HAT clockwise around the **y-axis** by 720° and then rotate it back (also 720°), please control the speed so that the process takes about 15s.
 
 .. image:: img/tip35.jpg
   :width: 400
   :align: center
 
-然后将X Sense HAT沿着x轴顺时针旋转720°，再沿着x轴逆时针旋转720°。
-这个过程同样需要用时15S以上，请控制转速。
+Similarly, rotate the X Sense HAT clockwise around the **x-axis** by 720° and then rotate it back (also 720°), please control the speed so that the process takes about 15s.
 
 .. image:: img/tip36.jpg
   :width: 400
   :align: center
 
-最后将X Sense HAT沿着z轴顺时针旋转720°，再沿着z轴逆时针旋转720°，按 ``Ctrl`` + ``C`` 退出代码的运行，校准完成。
-这个过程需要用时15S以上，请控制转速。
+Finally, rotate the X Sense HAT clockwise around the **z-axis** by 720° and then rotate it back (also 720°), please control the speed so that the process takes about 15s.
 
 .. image:: img/tip37.jpg
   :width: 400
   :align: center
 
+Press ``Ctrl`` + ``C`` to exit the operation of the code, and the calibration is completed.
+
 9.Read_from_MPU9250.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-校准完MPU9250模块之后，我们来打印MPU9250模块读取到的数据。
+After calibrating the MPU9250 chip, let's print the data read by the MPU9250 chip.
 
-下图是accelerometer和gyroscope映射到X Sense HAT上的x轴，y轴和z轴,
-在读取accelerometer和gyroscope在不同轴上的值时，我们都需要用到这个坐标图。
+The following diagram shows the coordinate system for the Acelerometer and Gyroscope.
 
 .. image:: img/tip41.png
   :width: 400
   :align: center
 
 .. note::
-  注意不同数轴的符号，如果在x轴的正半轴（x+）上有一个加速度值，那么它的单位为正。
 
-通过accelerometer，我们可以读取X Sense HAT在不同坐标轴上的加速度值，单位大小为g。
+  Note the positive direction on each axis.
 
-将X Sense HAT水平放置，此时X Sense HAT会受到一个垂直向下的重力加速度，大小为g（g=9.80665 N/kg）。
+**Accelerometer**
+
+Through the Accelerometer, we can read the acceleration values of the X Sense HAT on the different axes in **g**.
+
+Place the X Sense HAT horizontally. At this time, the X Sense HAT will be subjected to a vertical downward acceleration of gravity, which is **g (g=9.80665 N/kg)**.
 
 .. image:: img/tip42.jpg
   :width: 400
   :align: center
 
-当我们来打印accelerometer 在z轴上的加速度值时，打印窗口会显示一个-1左右的值
-（由于加速度值在 z 负半轴，所以单位为负）。
+When we print the acceleration value on the z-axis, the Debug Monitor will display a value around -1. Since the acceleration value is on the negative half axis of the z-axis, the unit is negative.
 
 .. code-block:: python
 
     def forever():
+      while True:
         print("%s"%(imu.read("accel","z")))
         delay(100)
 
-将X Sense HAT绕着y轴顺时针旋转，此时X Sense HAT受到的重力加速度可以分解成一个x轴上的加速度和
-一个z轴上的加速度，我们可以通过打印accelerometer在x轴上的值和accelerometer在z轴上的值来
-分别获取X Sense HAT在x正半轴上加速度的值（X1）和在z负半轴上加速度的值（Z1）。
-
+Rotate the X Sense HAT clockwise around the y-axis. At this time, the gravitational acceleration received by the X Sense HAT can be decomposed into an acceleration on the x-axis and
+an acceleration on the z-axis, we can print these 2 accelerations on the Debug Monitor.
+        
 .. code-block:: python
 
     def forever():
+      while True:
         print("%s"%('-----------------'))
         print("%s"%(imu.read("accel","x")))
         print("%s"%(imu.read("accel","z")))
         delay(100)
 
-通过gyroscope，我们可以读取X Sense HAT在不同坐标轴上的角速度值，单位大小为degrees/second，
-单位符号的判断遵循右手螺旋定则，将右手握住数轴，大拇指指向数轴正半轴的方向，
-此时四根手指指向的方向就是对应数轴的角速度值的正方向。
+**Gyroscope**
+
+Through the Gyroscope, we can read the angular velocity values ​​of X Sense HAT on different coordinate axes, the unit size is degrees/second.
+
+The judgment of the unit symbol follows the right-hand spiral rule. Hold the axis with your right hand and the thumb points in the direction of the positive semi-axis.
+
+At this time, the direction pointed by the four fingers is the positive direction of the angular velocity value.
 
 .. image:: img/tip64.jpg
   :width: 400
   :align: center
 
-打印gyroscope在y轴上的角速度值。
+Print the angular velocity value on the y-axis.
 
 .. code-block:: python
 
     def forever():
+      while True:
         print("%s"%(imu.read("gyro","y")))
         delay(100)
 
-将X Sense HAT绕着y轴顺时针旋转，由于X Sense HAT的角度发生了变化，所以产生了y轴的角速度值。
-同时打印窗口会显示y轴的角速度值，根据右手螺旋定则可以判断它的单位为正。
+Rotate the X Sense HAT clockwise around the y-axis. Because the angle of the X Sense HAT changes, the angular velocity value of the y-axis is generated and will be printed on Debug Monitor.
+According to the right-hand screw rule, its unit is positive.
 
 .. image:: img/tip44.jpg
   :width: 400
   :align: center
   
-下图是magnetometer映射到X Sense HAT上的x轴，y轴和z轴,在读取magnetometer在不同轴上的值时，
-我们都需要用到这个坐标图。
+**Magnetometer**
+    
+The following diagram shows the coordinate system for the Magnetometer.。
   
 .. image:: img/tip56.jpg
-  :width: 400
+  :width: 500
   :align: center
 
 .. note::
-  注意不同数轴的符号，如果在X轴的正半轴（x+）上有一个磁场强度值，那么它的单位为正。
 
-通过magnetometer，我们可以读取X Sense HAT在不同坐标轴上的磁场强度，单位大小为15μT。
+  Note the positive direction on each axis.
 
-我们可以把一块磁铁放在X Sense HAT的X正半轴上。
+Through the magnetometer, we can read the magnetic field strength of X Sense HAT on different coordinate axes, the unit size is 15μT.
+
+We can put a magnet on the positive x-axis of the X Sense HAT.
 
 .. image:: img/tip66.jpg
-  :width: 400
+  :width: 500
   :align: center
 
-然后打印X Sense HAT在x正半轴上磁场强度的值（单位为正）。
+Then print the value of the magnetic field strength on the positive semi-axis of the x-axis (in positive unit).
 
 .. code-block:: python
 
     def forever():
+      while True:
         print("%s"%(imu.read("mag","x")))
         delay(100)
 
-10.Know_the_Direction.py
+10.Attitude_Angle.py
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The X Sense HAT calculates the attitude angle of the current position so that we can know whether the X Sense HAT horizontal or not.
+
+This is the coordinate system of the attitude angle.
+
+.. image:: img/tip56.jpg
+  :width: 500
+  :align: center
+
+The unit symbol of the attitude angle also follows the right-hand spiral rule. 
+
+Hold the **x-axis** with your right hand and the thumb points in the direction of the positive semi-axis.
+At this time, the direction pointed by the four fingers is the positive direction of the roll angle.
+  
+In the same way, hold the **y-axis** with your right hand and the thumb points in the direction of the positive semi-axis.
+At this time, the direction pointed by the four fingers is the positive direction of the **pitch angle**.
+The unit symbol of the attitude angle also follows the right-hand spiral rule.
+
+.. image:: img/tip57.jpg
+  :width: 500
+  :align: center
+
+Run the EXAMPLE code, and then place the X Sense HAT horizontally, 0 will be printed on the Debug Monitor.
+
+If you rotate the X Sense HAT 30 degrees clockwise around the **x-axis**, 30 will be printed on the Debug Monitor.
+
+.. image:: img/tip70.jpg
+  :width: 400
+  :align: center
+
+Now change the drop-down menu to **pitch**, and then re-run the code.
+
+.. code-block:: python
+
+  def forever():
+    while True:
+      print("%s"%(imu.get_posture_angle(aram = "pitch")))
+      delay(100)
+
+Rotate the X Sense HAT 30 degrees counterclockwise around the **y-axis**, 30 will be printed on the Debug Monitor.
+
+.. image:: img/tip69.jpg
+  :width: 400
+  :align: center
+
+11.Make_Gif.py
+^^^^^^^^^^^^^^^^
+
+Draw multiple independent actions on the dot matrix screen. After the code runs, you can see a GIF animation.
+
+12.Spirit_Level.py
+^^^^^^^^^^^^^^^^^^^^
+
+Make X Sense HAT a spirit level. By reading the changes in roll angle and pitch angle, we can know whether the X Sense HAT is level.
+
+13.Gravity_Ball_Game.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-我们把X Sense HAT制作成一个指南针，这样我们就不会迷失方向了。
+Next, we have a gravity ball game on X Sense HAT. After pressing the joystick, the game starts. You need to keep the ball in the middle, if the ball hits the edge, the game is over.
 
-绿色箭头表示X Sense HAT检测的方向，你可以通过它来判断当前的位置。
+14.Compass.py
+^^^^^^^^^^^^^^^
+
+We make X Sense HAT into a compass. Draw a circle on the RGB dot matrix, and then use the green dot to indicate the current direction, and the red dot to indicate the true north direction.
+
+The green arrow indicates the detect direction of X Sense HAT, you can use it to judge the current position.
 
 .. image:: img/tip71.png
   :width: 400
   :align: center
 
-azimuth是从某点的指北方向线起，依顺时针方向到目标方向线之间的水平夹角（指南针的外圈数值）。
-根据得出的azimuth，我们就可以知道当前的位置，例如0度就是正北方向，30度就是北偏东30度角方向。
+**Azimuth Bearing**
+  
+Azimuth Bearing refers to the number on the outer circle and the Azimuth is the angle from the north direction line to the target direction line in a clockwise direction.
+For example, 0 degrees is the direction of true north, and 30 degrees is the direction of 30° east by north.
 
 .. image:: img/tip47.png
-  :width: 500
+  :width: 400
   :align: center
 
 .. code-block:: python
 
   def forever():
-    print("%s"%(imu.magnetic_angle('azimuth')))
-    delay(100)
+    while True:
+      print("%s"%(imu.magnetic_angle('azimuth')))
+      delay(100)
 
-quadrant是将指南针的方向八等分，我们可以借助azimuth来划分这八个区域，例如22.5度-67.5度之间就是NE方向，
-而67.5度-112.5之间就是E方向。
+**Quadrant Bearing**
+    
+Quadrant Bearing divides the direction of the compass into eight equal parts. For example, the NE direction is between 22.5 degrees and 67.5 degrees.
+And between 67.5 degrees and 112.5 degrees is the E direction.
 
 .. image:: img/tip68.jpg
   :width: 500
@@ -284,84 +360,33 @@ quadrant是将指南针的方向八等分，我们可以借助azimuth来划分�
 .. code-block:: python
 
   def forever():
-    print("%s"%(imu.magnetic_angle('quadrant')))
-    delay(100)
+    while True:
+      print("%s"%(imu.magnetic_angle('quadrant')))
+      delay(100)
 
-11.Attitude_Angle.py
+15.Smart_Sensor_Hat.py
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-X Sense HAT能计算当前位置的姿态角，这样我们就能判断X Sense HAT的平衡状态。
+We integrate the functions of X Sense HAT into a menu interface, press and hold the arrow keys of the joystick to select different functions, and press the joystick to execute the current function.
 
-这是适用于计算姿态角的坐标系，注意不同轴的正半轴的方向，这对我们判断旋转角度的方向会有帮助。
-
-.. image:: img/tip56.jpg
-  :width: 400
-  :align: center
-
-姿态角单位符号的判定同样遵循右手螺旋定则，将右手握住x轴，
-大拇指指向x轴正半轴的方向，此时四根手指指向的方向就是roll角的正方向。
-同理我们用右手握住y轴，将大拇指指向y轴正半轴的方向，此时四根手指指向的方向就是pitch角的正方向。
-
-.. image:: img/tip57.jpg
-  :width: 400
-  :align: center
-
-下载这份代码，水平放置时，Terminal窗口将显示0。
-我们将X Sense HAT沿着x轴顺时针旋转30度，此时Terminal窗口将显示30。
-
-.. image:: img/tip70.jpg
-  :width: 400
-  :align: center
-
-然后将X Sense HAT沿着y逆时针旋转30度，此时Terminal窗口将显示-30。
-
-.. image:: img/tip69.jpg
-  :width: 400
-  :align: center
-
-12.Make_Gif.py
-^^^^^^^^^^^^^^^^
-
-将多幅图像数据存于一起，并逐帧显示到RGB点阵上，这么我们就能在X Sense HAT上做一个简单的Gif动画。
-
-13.Spirit_Level.py
-^^^^^^^^^^^^^^^^^^^^
-
-将X Sense HAT做成一个水平仪。通过读取roll角和pitch角的变化，我们可以判断X Sense HAT当前是否位于水平状态。
-
-14.Gravity_Ball_Game.py
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-接下来我们在X Sense HAT上制作一个重力小球的游戏。按下摇杆后，游戏开始。如果RGB点阵屏上的小球碰到边缘，则游戏结束。
-
-15.Compass.py
-^^^^^^^^^^^^^^^
-
-我们将X Sense HAT制作成一个指南针，在RGB点阵上画一个圆，然后用绿点表示当前方向，红点表示正北方向。
-
-16.Smart_Sensor_Hat.py
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-我们把X Sense HAT的功能集成到一个菜单界面里，按住摇杆的方向键选择功能选项，按下摇杆则执行当前功能选项。
-
-17.Bugs_Jump.py
+16.Bugs_Jump.py
 ^^^^^^^^^^^^^^^^^^
 
-这是一个跳跃障碍物游戏，通过摇杆的上控制虫子的跳跃动作来躲避会变速障碍物
+This is a jumping obstacle game. Use the joystick to control the jumping action of the bug and avoid variable speed obstacles.
 
-18.Gluttonous_Snake.py
+17.Gluttonous_Snake.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-这是一个通过摇杆进行的贪吃蛇游戏，规则是20秒内尽可能多的吃绿色点，吃到自己的身体，分会归零
+This is a snake-eating game with a joystick. The rule is to eat as many green dots as possible within 20 seconds. If you eat yourself, the club will return to zero.
 
-19.Gravity_Ball.py
+18.Gravity_Ball.py
 ^^^^^^^^^^^^^^^^^^^^^^
 
-这是一个靠重力感应去控制方块吃点的游戏，触碰边界会一直扣分，规定时间内，吃的点越多，分数越高
+This is a game that relies on gravity sensing to control the cube to eat points. When the cube touches the boundary, points will be deducted. The more points eaten within the specified time, the higher the score.
 
-20.Pattern.py
+19.Pattern.py
 ^^^^^^^^^^^^^^^^
 
-运行代码后，RGB点阵屏上会显示一个有趣的图案。
+After running the code, an interesting pattern will be displayed on the RGB dot matrix screen.
 
 

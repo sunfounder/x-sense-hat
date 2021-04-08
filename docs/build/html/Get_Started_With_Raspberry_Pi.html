@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Get Started With Raspberry Pi &mdash; x-sense-hat  documentation</title>
+  <title>Get Started With Raspberry Pi &mdash; SunFounder X Sense HAT  documentation</title>
   
 
   
@@ -39,8 +39,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Python Programming" href="Programming_python.html" />
-    <link rel="prev" title="For Traditional Programming Users" href="For_Traditional_Programming_Users.html" /> 
+    <link rel="next" title="Python Programming" href="programming_python.html" />
+    <link rel="prev" title="Play On Other Programming Platforms" href="play_on_other_programming_platforms.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -54,7 +54,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> x-sense-hat
+            <a href="index.html" class="icon icon-home"> SunFounder X Sense HAT
           
 
           
@@ -86,11 +86,12 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Components_List.html">Components List</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Burning_System.html">Burning System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Assembling.html">Assembling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about_x_sense_hat.html">About X Sense HAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components_list.html">Components List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="burning_system.html">Burning System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="play_on_ezblock_studio.html">Play on Ezblock Studio</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="play_on_other_programming_platforms.html">Play On Other Programming Platforms</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Get Started With Raspberry Pi</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#connect-the-raspberry-pi-to-the-internet">Connect the Raspberry Pi to the Internet</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#get-the-ip-address">Get the IP Address</a><ul>
@@ -105,7 +106,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="Programming_python.html">Python Programming</a></li>
+<li class="toctree-l2"><a class="reference internal" href="programming_python.html">Python Programming</a></li>
 </ul>
 </li>
 </ul>
@@ -123,7 +124,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">x-sense-hat</a>
+          <a href="index.html">SunFounder X Sense HAT</a>
         
       </nav>
 
@@ -156,7 +157,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a> &raquo;</li>
+          <li><a href="play_on_other_programming_platforms.html">Play On Other Programming Platforms</a> &raquo;</li>
         
       <li>Get Started With Raspberry Pi</li>
     
@@ -164,7 +165,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Get_Started_With_Raspberry_Pi.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/get_started_with_raspberry_pi.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -191,15 +192,15 @@ then you can’t access the directory and what you need next is to go to the dir
 .</p>
 <a class="reference internal image-reference" href="_images/start1.png"><img alt="_images/start1.png" class="align-center" src="_images/start1.png" style="width: 400px;" /></a>
 <p>Input the following content in the file:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-country=GB
-network={
-ssid=”Wi-Fi-A”
-psk=”Sunfounder”
-key_mgmt=WPA-PSK
-priority=1
-}
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ctrl_interface</span><span class="o">=</span><span class="n">DIR</span><span class="o">=/</span><span class="n">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">wpa_supplicant</span> <span class="n">GROUP</span><span class="o">=</span><span class="n">netdev</span>
+<span class="n">update_config</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">country</span><span class="o">=</span><span class="n">GB</span>
+<span class="n">network</span><span class="o">=</span><span class="p">{</span>
+<span class="n">ssid</span><span class="o">=</span><span class="s2">&quot;Wi-Fi-A&quot;</span>
+<span class="n">psk</span><span class="o">=</span><span class="s2">&quot;Sunfounder&quot;</span>
+<span class="n">key_mgmt</span><span class="o">=</span><span class="n">WPA</span><span class="o">-</span><span class="n">PSK</span>
+<span class="n">priority</span><span class="o">=</span><span class="mi">1</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <div class="admonition note">
@@ -291,15 +292,15 @@ RPi), and password: “raspberry” (the default one, if you haven’t changed i
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="Programming_python.html" class="btn btn-neutral float-right" title="Python Programming" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="For_Traditional_Programming_Users.html" class="btn btn-neutral float-left" title="For Traditional Programming Users" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="programming_python.html" class="btn btn-neutral float-right" title="Python Programming" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="play_on_other_programming_platforms.html" class="btn btn-neutral float-left" title="Play On Other Programming Platforms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, sunfounder.
+        &#169; Copyright 2021, SunFounder.
 
     </p>
   </div>

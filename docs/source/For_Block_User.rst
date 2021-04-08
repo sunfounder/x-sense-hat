@@ -1,28 +1,24 @@
 For Block User
 ================
 
-Here, we show you the basic operation of playing X Sense HAT with Ezblock. If you are new to these, 
-you can try to write the corresponding function according to TIPS, or directly
-use the reference code in Example. We suggest you do it yourself and experience the
-fun of challenges.
+Here we just show you the effect of this example implementation and the functions of the blocks used. You can go directly to the Examples page of Ezblock Studio to see the full codes and run them.
 
-如果你是第一次接触Ezblock的block编程或者第一次使用X Sense HAT，这里建议你按照示例顺序进行学习。
+The examples are from simple to complex and it is recommended to run them in order.
 
 .. toctree::
     :maxdepth: 1
   
-    Draw_a_Graphic
-    Test_the_Vibration_Motor
-    Display_Temperature
-    Sound_Effect
-    Music_Player
-    Point_Line_Rectangle_Circle
-    Calibrate_the_Mpu9250
-    Read_from_Mpu9250
-    Know_the_Direction
-    Attitude_Angle
-    Make_Gif
-    Spirit_Level
-    Gravity_Ball_Game
-    Compass
-    Smart_Sensor_Hat
+    display_graphics
+    test_the_vibration_motor
+    display_temperature
+    sound_effect
+    music_player
+    point_line_rectangle_circle
+    calibrate_the_mpu9250
+    read_from_mpu9250
+    attitude_angle
+    make_gif
+    spirit_level
+    gravity_ball_game
+    compass
+    smart_sense_hat

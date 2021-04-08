@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Python Programming &mdash; x-sense-hat  documentation</title>
+  <title>Python Programming &mdash; SunFounder X Sense HAT  documentation</title>
   
 
   
@@ -39,7 +39,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Get Started With Raspberry Pi" href="Get_Started_With_Raspberry_Pi.html" /> 
+    <link rel="prev" title="Get Started With Raspberry Pi" href="get_started_with_raspberry_pi.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -53,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> x-sense-hat
+            <a href="index.html" class="icon icon-home"> SunFounder X Sense HAT
           
 
           
@@ -85,17 +85,18 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Components_List.html">Components List</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Burning_System.html">Burning System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Assembling.html">Assembling</a></li>
-<li class="toctree-l1"><a class="reference internal" href="For_Ezblock_Studio_User.html">For Ezblock Studio User</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Get_Started_With_Raspberry_Pi.html">Get Started With Raspberry Pi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_x_sense_hat.html">About X Sense HAT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="components_list.html">Components List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="burning_system.html">Burning System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assembling.html">Assembling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="play_on_ezblock_studio.html">Play on Ezblock Studio</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="play_on_other_programming_platforms.html">Play On Other Programming Platforms</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="get_started_with_raspberry_pi.html">Get Started With Raspberry Pi</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Python Programming</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#download-the-code">Download the Code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#stop-ezblock-service">Stop Ezblock Service</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#python-code-control">Python Code Control</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#draw-a-graphic-py">1.Draw_a_Graphic.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-graphics-py">1.Display_Graphics.py</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#test-the-vibration-motor-py">2.Test_the_Vibration_Motor.py</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#display-temperature-py">3.Display_Temperature.py</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sound-effect-py">4.Sound_Effect.py</a></li>
@@ -104,17 +105,16 @@
 <li class="toctree-l4"><a class="reference internal" href="#calibrate-the-accelerometer-and-gyroscope-py">7.Calibrate_the_Accelerometer_and_Gyroscope.py</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#calibrate-the-magnetometer-py">8.Calibrate_the_Magnetometer.py</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#read-from-mpu9250-py">9.Read_from_MPU9250.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#know-the-direction-py">10.Know_the_Direction.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#attitude-angle-py">11.Attitude_Angle.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#make-gif-py">12.Make_Gif.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#spirit-level-py">13.Spirit_Level.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#gravity-ball-game-py">14.Gravity_Ball_Game.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#compass-py">15.Compass.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#smart-sensor-hat-py">16.Smart_Sensor_Hat.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#bugs-jump-py">17.Bugs_Jump.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#gluttonous-snake-py">18.Gluttonous_Snake.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#gravity-ball-py">19.Gravity_Ball.py</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pattern-py">20.Pattern.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attitude-angle-py">10.Attitude_Angle.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-gif-py">11.Make_Gif.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spirit-level-py">12.Spirit_Level.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gravity-ball-game-py">13.Gravity_Ball_Game.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compass-py">14.Compass.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smart-sensor-hat-py">15.Smart_Sensor_Hat.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bugs-jump-py">16.Bugs_Jump.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gluttonous-snake-py">17.Gluttonous_Snake.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gravity-ball-py">18.Gravity_Ball.py</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pattern-py">19.Pattern.py</a></li>
 </ul>
 </li>
 </ul>
@@ -136,7 +136,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">x-sense-hat</a>
+          <a href="index.html">SunFounder X Sense HAT</a>
         
       </nav>
 
@@ -169,7 +169,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="For_Traditional_Programming_Users.html">For Traditional Programming Users</a> &raquo;</li>
+          <li><a href="play_on_other_programming_platforms.html">Play On Other Programming Platforms</a> &raquo;</li>
         
       <li>Python Programming</li>
     
@@ -177,7 +177,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Programming_python.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/programming_python.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -235,20 +235,20 @@ codes and a web_control folder in it.</p>
 </pre></div>
 </div>
 <p>You can run the python codes by the following command:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">python3</span> <span class="mf">1.</span><span class="n">Draw_a_Graphic</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">python3</span> <span class="mf">1.</span><span class="n">Display_Graphics</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<div class="section" id="draw-a-graphic-py">
-<h3>1.Draw_a_Graphic.py<a class="headerlink" href="#draw-a-graphic-py" title="Permalink to this headline">¶</a></h3>
-<p>运行代码后，X Sense HAT的点阵屏上会显示一个有趣的小人物。</p>
+<div class="section" id="display-graphics-py">
+<h3>1.Display_Graphics.py<a class="headerlink" href="#display-graphics-py" title="Permalink to this headline">¶</a></h3>
+<p>Here we will draw a funny character and show a heart on the screen.</p>
 </div>
 <div class="section" id="test-the-vibration-motor-py">
 <h3>2.Test_the_Vibration_Motor.py<a class="headerlink" href="#test-the-vibration-motor-py" title="Permalink to this headline">¶</a></h3>
-<p>运行代码后，X Sense HAT上的电机会振动得越来越快。</p>
+<p>After running the code, the motor on the X Sense HAT will vibrate faster and faster.</p>
 </div>
 <div class="section" id="display-temperature-py">
 <h3>3.Display_Temperature.py<a class="headerlink" href="#display-temperature-py" title="Permalink to this headline">¶</a></h3>
-<p>将X Sense HAT制作成一个温度计，你可以在RGB点阵上查看温度值。</p>
+<p>At this time the X Sense HAT is a thermometer to display the current temperature.</p>
 </div>
 <div class="section" id="sound-effect-py">
 <h3>4.Sound_Effect.py<a class="headerlink" href="#sound-effect-py" title="Permalink to this headline">¶</a></h3>
@@ -267,169 +267,178 @@ the sound effect file in the 6.sound_effect.py.</p>
 </div>
 <div class="section" id="music-player-py">
 <h3>5.Music_Player.py<a class="headerlink" href="#music-player-py" title="Permalink to this headline">¶</a></h3>
-<p>In addition to having X Sense HAT play sound effects or speak on specific occasions, you
-can also add background music to it. 使用摇杆的上下方向键来控制音量大小，左右方向键控制音乐的暂停和继续。</p>
+<p>In this example, the X Sense HAT acts as a Music Player, the up and down buttons of the joystick to control the volume of the Music Player and the left and right buttons to control the pause or play of the music.</p>
 <p>To add music, you can try to upload your music to the path /home/pi/Music/ via
 FTP. Rename the music file in the function background_music(‘spry.mp3’).</p>
 </div>
 <div class="section" id="point-line-rectangle-circle-py">
 <h3>6.Point_Line_Rectangle_Circle.py<a class="headerlink" href="#point-line-rectangle-circle-py" title="Permalink to this headline">¶</a></h3>
-<p>在X Sense HAT的RGB点阵屏上画一个点、一条直线、一个矩形和一个圆。</p>
+<p>By creating a coordinate we can draw a point, a line, a rectangle and a circle at the  specified location on the X Sense HAT.</p>
 </div>
 <div class="section" id="calibrate-the-accelerometer-and-gyroscope-py">
 <h3>7.Calibrate_the_Accelerometer_and_Gyroscope.py<a class="headerlink" href="#calibrate-the-accelerometer-and-gyroscope-py" title="Permalink to this headline">¶</a></h3>
-<p>The InvenSense MPU-9250 is a System in Package (SiP) that combines two chips: the MPU-6500 three-axis
-accelerometer and three-axis gyroscope; and the AK8963 three-axis magnetometer.
-首先我们对accelerometer and gyroscope进行校准。</p>
-<p>下图是MPU9250模块映射到X Sense HAT上的x轴，y轴和z轴,在校准MPU9250模块时，我们需要用到这个坐标图。</p>
-<a class="reference internal image-reference" href="_images/tip34.jpg"><img alt="_images/tip34.jpg" class="align-center" src="_images/tip34.jpg" style="width: 400px;" /></a>
-<p>下载这份代码，将X Sense HAT放在水平桌面上，等待2秒后，按 <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code> 退出代码的运行，校准完成。
-X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不同轴上的0度值点。</p>
+<p>The InvenSense MPU9250 is a System in Package (SiP) that combines two chips: the MPU-6500 three-axis Accelerometer and three-axis Gyroscope; and the AK8963 three-axis Magnetometer.</p>
+<p>Before using the MPU9250 chip, we need to calibrate different chips.</p>
+<p>After running the code, place the X Sense HAT horizontally. After 2 seconds, press <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code> to exit the operation of the code, and the calibration is completed.</p>
+<p>The X Sense HAT records the current horizontal position as a 0 degree point on the different axes of the Accelerometer and Gyroscope.</p>
 </div>
 <div class="section" id="calibrate-the-magnetometer-py">
 <h3>8.Calibrate_the_Magnetometer.py<a class="headerlink" href="#calibrate-the-magnetometer-py" title="Permalink to this headline">¶</a></h3>
-<p>下载这份代码，将X Sense HAT沿着y轴顺时针旋转720°，
-再沿着y轴逆时针旋转720°。这个过程大概需要用时15S以上，请控制好转速。</p>
+<p>The figure below is the coordinate system that will be used to calibrate the magnetometer.</p>
+<a class="reference internal image-reference" href="_images/tip34.jpg"><img alt="_images/tip34.jpg" class="align-center" src="_images/tip34.jpg" style="width: 400px;" /></a>
+<p>Download this code, Turn the B switch on（keep switch A off）, rotate the X Sense HAT clockwise around the <strong>y-axis</strong> by 720° and then rotate it back (also 720°), please control the speed so that the process takes about 15s.</p>
 <a class="reference internal image-reference" href="_images/tip35.jpg"><img alt="_images/tip35.jpg" class="align-center" src="_images/tip35.jpg" style="width: 400px;" /></a>
-<p>然后将X Sense HAT沿着x轴顺时针旋转720°，再沿着x轴逆时针旋转720°。
-这个过程同样需要用时15S以上，请控制转速。</p>
+<p>Similarly, rotate the X Sense HAT clockwise around the <strong>x-axis</strong> by 720° and then rotate it back (also 720°), please control the speed so that the process takes about 15s.</p>
 <a class="reference internal image-reference" href="_images/tip36.jpg"><img alt="_images/tip36.jpg" class="align-center" src="_images/tip36.jpg" style="width: 400px;" /></a>
-<p>最后将X Sense HAT沿着z轴顺时针旋转720°，再沿着z轴逆时针旋转720°，按 <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code> 退出代码的运行，校准完成。
-这个过程需要用时15S以上，请控制转速。</p>
+<p>Finally, rotate the X Sense HAT clockwise around the <strong>z-axis</strong> by 720° and then rotate it back (also 720°), please control the speed so that the process takes about 15s.</p>
 <a class="reference internal image-reference" href="_images/tip37.jpg"><img alt="_images/tip37.jpg" class="align-center" src="_images/tip37.jpg" style="width: 400px;" /></a>
+<p>Press <code class="docutils literal notranslate"><span class="pre">Ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">C</span></code> to exit the operation of the code, and the calibration is completed.</p>
 </div>
 <div class="section" id="read-from-mpu9250-py">
 <h3>9.Read_from_MPU9250.py<a class="headerlink" href="#read-from-mpu9250-py" title="Permalink to this headline">¶</a></h3>
-<p>校准完MPU9250模块之后，我们来打印MPU9250模块读取到的数据。</p>
-<p>下图是accelerometer和gyroscope映射到X Sense HAT上的x轴，y轴和z轴,
-在读取accelerometer和gyroscope在不同轴上的值时，我们都需要用到这个坐标图。</p>
+<p>After calibrating the MPU9250 chip, let’s print the data read by the MPU9250 chip.</p>
+<p>The following diagram shows the coordinate system for the Acelerometer and Gyroscope.</p>
 <a class="reference internal image-reference" href="_images/tip41.png"><img alt="_images/tip41.png" class="align-center" src="_images/tip41.png" style="width: 400px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>注意不同数轴的符号，如果在x轴的正半轴（x+）上有一个加速度值，那么它的单位为正。</p>
+<p>Note the positive direction on each axis.</p>
 </div>
-<p>通过accelerometer，我们可以读取X Sense HAT在不同坐标轴上的加速度值，单位大小为g。</p>
-<p>将X Sense HAT水平放置，此时X Sense HAT会受到一个垂直向下的重力加速度，大小为g（g=9.80665 N/kg）。</p>
+<p><strong>Accelerometer</strong></p>
+<p>Through the Accelerometer, we can read the acceleration values of the X Sense HAT on the different axes in <strong>g</strong>.</p>
+<p>Place the X Sense HAT horizontally. At this time, the X Sense HAT will be subjected to a vertical downward acceleration of gravity, which is <strong>g (g=9.80665 N/kg)</strong>.</p>
 <a class="reference internal image-reference" href="_images/tip42.jpg"><img alt="_images/tip42.jpg" class="align-center" src="_images/tip42.jpg" style="width: 400px;" /></a>
-<p>当我们来打印accelerometer 在z轴上的加速度值时，打印窗口会显示一个-1左右的值
-（由于加速度值在 z 负半轴，所以单位为负）。</p>
+<p>When we print the acceleration value on the z-axis, the Debug Monitor will display a value around -1. Since the acceleration value is on the negative half axis of the z-axis, the unit is negative.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;accel&quot;</span><span class="p">,</span><span class="s2">&quot;z&quot;</span><span class="p">)))</span>
     <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>将X Sense HAT绕着y轴顺时针旋转，此时X Sense HAT受到的重力加速度可以分解成一个x轴上的加速度和
-一个z轴上的加速度，我们可以通过打印accelerometer在x轴上的值和accelerometer在z轴上的值来
-分别获取X Sense HAT在x正半轴上加速度的值（X1）和在z负半轴上加速度的值（Z1）。</p>
+<p>Rotate the X Sense HAT clockwise around the y-axis. At this time, the gravitational acceleration received by the X Sense HAT can be decomposed into an acceleration on the x-axis and
+an acceleration on the z-axis, we can print these 2 accelerations on the Debug Monitor.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="s1">&#39;-----------------&#39;</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;accel&quot;</span><span class="p">,</span><span class="s2">&quot;x&quot;</span><span class="p">)))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;accel&quot;</span><span class="p">,</span><span class="s2">&quot;z&quot;</span><span class="p">)))</span>
     <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>通过gyroscope，我们可以读取X Sense HAT在不同坐标轴上的角速度值，单位大小为degrees/second，
-单位符号的判断遵循右手螺旋定则，将右手握住数轴，大拇指指向数轴正半轴的方向，
-此时四根手指指向的方向就是对应数轴的角速度值的正方向。</p>
+<p><strong>Gyroscope</strong></p>
+<p>Through the Gyroscope, we can read the angular velocity values ​​of X Sense HAT on different coordinate axes, the unit size is degrees/second.</p>
+<p>The judgment of the unit symbol follows the right-hand spiral rule. Hold the axis with your right hand and the thumb points in the direction of the positive semi-axis.</p>
+<p>At this time, the direction pointed by the four fingers is the positive direction of the angular velocity value.</p>
 <a class="reference internal image-reference" href="_images/tip64.jpg"><img alt="_images/tip64.jpg" class="align-center" src="_images/tip64.jpg" style="width: 400px;" /></a>
-<p>打印gyroscope在y轴上的角速度值。</p>
+<p>Print the angular velocity value on the y-axis.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;gyro&quot;</span><span class="p">,</span><span class="s2">&quot;y&quot;</span><span class="p">)))</span>
     <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>将X Sense HAT绕着y轴顺时针旋转，由于X Sense HAT的角度发生了变化，所以产生了y轴的角速度值。
-同时打印窗口会显示y轴的角速度值，根据右手螺旋定则可以判断它的单位为正。</p>
+<p>Rotate the X Sense HAT clockwise around the y-axis. Because the angle of the X Sense HAT changes, the angular velocity value of the y-axis is generated and will be printed on Debug Monitor.
+According to the right-hand screw rule, its unit is positive.</p>
 <a class="reference internal image-reference" href="_images/tip44.jpg"><img alt="_images/tip44.jpg" class="align-center" src="_images/tip44.jpg" style="width: 400px;" /></a>
-<p>下图是magnetometer映射到X Sense HAT上的x轴，y轴和z轴,在读取magnetometer在不同轴上的值时，
-我们都需要用到这个坐标图。</p>
-<a class="reference internal image-reference" href="_images/tip56.jpg"><img alt="_images/tip56.jpg" class="align-center" src="_images/tip56.jpg" style="width: 400px;" /></a>
+<p><strong>Magnetometer</strong></p>
+<p>The following diagram shows the coordinate system for the Magnetometer.。</p>
+<a class="reference internal image-reference" href="_images/tip56.jpg"><img alt="_images/tip56.jpg" class="align-center" src="_images/tip56.jpg" style="width: 500px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>注意不同数轴的符号，如果在X轴的正半轴（x+）上有一个磁场强度值，那么它的单位为正。</p>
+<p>Note the positive direction on each axis.</p>
 </div>
-<p>通过magnetometer，我们可以读取X Sense HAT在不同坐标轴上的磁场强度，单位大小为15μT。</p>
-<p>我们可以把一块磁铁放在X Sense HAT的X正半轴上。</p>
-<a class="reference internal image-reference" href="_images/tip66.jpg"><img alt="_images/tip66.jpg" class="align-center" src="_images/tip66.jpg" style="width: 400px;" /></a>
-<p>然后打印X Sense HAT在x正半轴上磁场强度的值（单位为正）。</p>
+<p>Through the magnetometer, we can read the magnetic field strength of X Sense HAT on different coordinate axes, the unit size is 15μT.</p>
+<p>We can put a magnet on the positive x-axis of the X Sense HAT.</p>
+<a class="reference internal image-reference" href="_images/tip66.jpg"><img alt="_images/tip66.jpg" class="align-center" src="_images/tip66.jpg" style="width: 500px;" /></a>
+<p>Then print the value of the magnetic field strength on the positive semi-axis of the x-axis (in positive unit).</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;mag&quot;</span><span class="p">,</span><span class="s2">&quot;x&quot;</span><span class="p">)))</span>
     <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="know-the-direction-py">
-<h3>10.Know_the_Direction.py<a class="headerlink" href="#know-the-direction-py" title="Permalink to this headline">¶</a></h3>
-<p>我们把X Sense HAT制作成一个指南针，这样我们就不会迷失方向了。</p>
-<p>绿色箭头表示X Sense HAT检测的方向，你可以通过它来判断当前的位置。</p>
-<a class="reference internal image-reference" href="_images/tip71.png"><img alt="_images/tip71.png" class="align-center" src="_images/tip71.png" style="width: 400px;" /></a>
-<p>azimuth是从某点的指北方向线起，依顺时针方向到目标方向线之间的水平夹角（指南针的外圈数值）。
-根据得出的azimuth，我们就可以知道当前的位置，例如0度就是正北方向，30度就是北偏东30度角方向。</p>
-<a class="reference internal image-reference" href="_images/tip47.png"><img alt="_images/tip47.png" class="align-center" src="_images/tip47.png" style="width: 500px;" /></a>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">magnetic_angle</span><span class="p">(</span><span class="s1">&#39;azimuth&#39;</span><span class="p">)))</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>quadrant是将指南针的方向八等分，我们可以借助azimuth来划分这八个区域，例如22.5度-67.5度之间就是NE方向，
-而67.5度-112.5之间就是E方向。</p>
-<a class="reference internal image-reference" href="_images/tip68.jpg"><img alt="_images/tip68.jpg" class="align-center" src="_images/tip68.jpg" style="width: 500px;" /></a>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">magnetic_angle</span><span class="p">(</span><span class="s1">&#39;quadrant&#39;</span><span class="p">)))</span>
-  <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="attitude-angle-py">
-<h3>11.Attitude_Angle.py<a class="headerlink" href="#attitude-angle-py" title="Permalink to this headline">¶</a></h3>
-<p>X Sense HAT能计算当前位置的姿态角，这样我们就能判断X Sense HAT的平衡状态。</p>
-<p>这是适用于计算姿态角的坐标系，注意不同轴的正半轴的方向，这对我们判断旋转角度的方向会有帮助。</p>
-<a class="reference internal image-reference" href="_images/tip56.jpg"><img alt="_images/tip56.jpg" class="align-center" src="_images/tip56.jpg" style="width: 400px;" /></a>
-<p>姿态角单位符号的判定同样遵循右手螺旋定则，将右手握住x轴，
-大拇指指向x轴正半轴的方向，此时四根手指指向的方向就是roll角的正方向。
-同理我们用右手握住y轴，将大拇指指向y轴正半轴的方向，此时四根手指指向的方向就是pitch角的正方向。</p>
-<a class="reference internal image-reference" href="_images/tip57.jpg"><img alt="_images/tip57.jpg" class="align-center" src="_images/tip57.jpg" style="width: 400px;" /></a>
-<p>下载这份代码，水平放置时，Terminal窗口将显示0。
-我们将X Sense HAT沿着x轴顺时针旋转30度，此时Terminal窗口将显示30。</p>
+<h3>10.Attitude_Angle.py<a class="headerlink" href="#attitude-angle-py" title="Permalink to this headline">¶</a></h3>
+<p>The X Sense HAT calculates the attitude angle of the current position so that we can know whether the X Sense HAT horizontal or not.</p>
+<p>This is the coordinate system of the attitude angle.</p>
+<a class="reference internal image-reference" href="_images/tip56.jpg"><img alt="_images/tip56.jpg" class="align-center" src="_images/tip56.jpg" style="width: 500px;" /></a>
+<p>The unit symbol of the attitude angle also follows the right-hand spiral rule.</p>
+<p>Hold the <strong>x-axis</strong> with your right hand and the thumb points in the direction of the positive semi-axis.
+At this time, the direction pointed by the four fingers is the positive direction of the roll angle.</p>
+<p>In the same way, hold the <strong>y-axis</strong> with your right hand and the thumb points in the direction of the positive semi-axis.
+At this time, the direction pointed by the four fingers is the positive direction of the <strong>pitch angle</strong>.
+The unit symbol of the attitude angle also follows the right-hand spiral rule.</p>
+<a class="reference internal image-reference" href="_images/tip57.jpg"><img alt="_images/tip57.jpg" class="align-center" src="_images/tip57.jpg" style="width: 500px;" /></a>
+<p>Run the EXAMPLE code, and then place the X Sense HAT horizontally, 0 will be printed on the Debug Monitor.</p>
+<p>If you rotate the X Sense HAT 30 degrees clockwise around the <strong>x-axis</strong>, 30 will be printed on the Debug Monitor.</p>
 <a class="reference internal image-reference" href="_images/tip70.jpg"><img alt="_images/tip70.jpg" class="align-center" src="_images/tip70.jpg" style="width: 400px;" /></a>
-<p>然后将X Sense HAT沿着y逆时针旋转30度，此时Terminal窗口将显示-30。</p>
+<p>Now change the drop-down menu to <strong>pitch</strong>, and then re-run the code.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">get_posture_angle</span><span class="p">(</span><span class="n">aram</span> <span class="o">=</span> <span class="s2">&quot;pitch&quot;</span><span class="p">)))</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Rotate the X Sense HAT 30 degrees counterclockwise around the <strong>y-axis</strong>, 30 will be printed on the Debug Monitor.</p>
 <a class="reference internal image-reference" href="_images/tip69.jpg"><img alt="_images/tip69.jpg" class="align-center" src="_images/tip69.jpg" style="width: 400px;" /></a>
 </div>
 <div class="section" id="make-gif-py">
-<h3>12.Make_Gif.py<a class="headerlink" href="#make-gif-py" title="Permalink to this headline">¶</a></h3>
-<p>将多幅图像数据存于一起，并逐帧显示到RGB点阵上，这么我们就能在X Sense HAT上做一个简单的Gif动画。</p>
+<h3>11.Make_Gif.py<a class="headerlink" href="#make-gif-py" title="Permalink to this headline">¶</a></h3>
+<p>Draw multiple independent actions on the dot matrix screen. After the code runs, you can see a GIF animation.</p>
 </div>
 <div class="section" id="spirit-level-py">
-<h3>13.Spirit_Level.py<a class="headerlink" href="#spirit-level-py" title="Permalink to this headline">¶</a></h3>
-<p>将X Sense HAT做成一个水平仪。通过读取roll角和pitch角的变化，我们可以判断X Sense HAT当前是否位于水平状态。</p>
+<h3>12.Spirit_Level.py<a class="headerlink" href="#spirit-level-py" title="Permalink to this headline">¶</a></h3>
+<p>Make X Sense HAT a spirit level. By reading the changes in roll angle and pitch angle, we can know whether the X Sense HAT is level.</p>
 </div>
 <div class="section" id="gravity-ball-game-py">
-<h3>14.Gravity_Ball_Game.py<a class="headerlink" href="#gravity-ball-game-py" title="Permalink to this headline">¶</a></h3>
-<p>接下来我们在X Sense HAT上制作一个重力小球的游戏。按下摇杆后，游戏开始。如果RGB点阵屏上的小球碰到边缘，则游戏结束。</p>
+<h3>13.Gravity_Ball_Game.py<a class="headerlink" href="#gravity-ball-game-py" title="Permalink to this headline">¶</a></h3>
+<p>Next, we have a gravity ball game on X Sense HAT. After pressing the joystick, the game starts. You need to keep the ball in the middle, if the ball hits the edge, the game is over.</p>
 </div>
 <div class="section" id="compass-py">
-<h3>15.Compass.py<a class="headerlink" href="#compass-py" title="Permalink to this headline">¶</a></h3>
-<p>我们将X Sense HAT制作成一个指南针，在RGB点阵上画一个圆，然后用绿点表示当前方向，红点表示正北方向。</p>
+<h3>14.Compass.py<a class="headerlink" href="#compass-py" title="Permalink to this headline">¶</a></h3>
+<p>We make X Sense HAT into a compass. Draw a circle on the RGB dot matrix, and then use the green dot to indicate the current direction, and the red dot to indicate the true north direction.</p>
+<p>The green arrow indicates the detect direction of X Sense HAT, you can use it to judge the current position.</p>
+<a class="reference internal image-reference" href="_images/tip71.png"><img alt="_images/tip71.png" class="align-center" src="_images/tip71.png" style="width: 400px;" /></a>
+<p><strong>Azimuth Bearing</strong></p>
+<p>Azimuth Bearing refers to the number on the outer circle and the Azimuth is the angle from the north direction line to the target direction line in a clockwise direction.
+For example, 0 degrees is the direction of true north, and 30 degrees is the direction of 30° east by north.</p>
+<a class="reference internal image-reference" href="_images/tip47.png"><img alt="_images/tip47.png" class="align-center" src="_images/tip47.png" style="width: 400px;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">magnetic_angle</span><span class="p">(</span><span class="s1">&#39;azimuth&#39;</span><span class="p">)))</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Quadrant Bearing</strong></p>
+<p>Quadrant Bearing divides the direction of the compass into eight equal parts. For example, the NE direction is between 22.5 degrees and 67.5 degrees.
+And between 67.5 degrees and 112.5 degrees is the E direction.</p>
+<a class="reference internal image-reference" href="_images/tip68.jpg"><img alt="_images/tip68.jpg" class="align-center" src="_images/tip68.jpg" style="width: 500px;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">forever</span><span class="p">():</span>
+  <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">imu</span><span class="o">.</span><span class="n">magnetic_angle</span><span class="p">(</span><span class="s1">&#39;quadrant&#39;</span><span class="p">)))</span>
+    <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="smart-sensor-hat-py">
-<h3>16.Smart_Sensor_Hat.py<a class="headerlink" href="#smart-sensor-hat-py" title="Permalink to this headline">¶</a></h3>
-<p>我们把X Sense HAT的功能集成到一个菜单界面里，按住摇杆的方向键选择功能选项，按下摇杆则执行当前功能选项。</p>
+<h3>15.Smart_Sensor_Hat.py<a class="headerlink" href="#smart-sensor-hat-py" title="Permalink to this headline">¶</a></h3>
+<p>We integrate the functions of X Sense HAT into a menu interface, press and hold the arrow keys of the joystick to select different functions, and press the joystick to execute the current function.</p>
 </div>
 <div class="section" id="bugs-jump-py">
-<h3>17.Bugs_Jump.py<a class="headerlink" href="#bugs-jump-py" title="Permalink to this headline">¶</a></h3>
-<p>这是一个跳跃障碍物游戏，通过摇杆的上控制虫子的跳跃动作来躲避会变速障碍物</p>
+<h3>16.Bugs_Jump.py<a class="headerlink" href="#bugs-jump-py" title="Permalink to this headline">¶</a></h3>
+<p>This is a jumping obstacle game. Use the joystick to control the jumping action of the bug and avoid variable speed obstacles.</p>
 </div>
 <div class="section" id="gluttonous-snake-py">
-<h3>18.Gluttonous_Snake.py<a class="headerlink" href="#gluttonous-snake-py" title="Permalink to this headline">¶</a></h3>
-<p>这是一个通过摇杆进行的贪吃蛇游戏，规则是20秒内尽可能多的吃绿色点，吃到自己的身体，分会归零</p>
+<h3>17.Gluttonous_Snake.py<a class="headerlink" href="#gluttonous-snake-py" title="Permalink to this headline">¶</a></h3>
+<p>This is a snake-eating game with a joystick. The rule is to eat as many green dots as possible within 20 seconds. If you eat yourself, the club will return to zero.</p>
 </div>
 <div class="section" id="gravity-ball-py">
-<h3>19.Gravity_Ball.py<a class="headerlink" href="#gravity-ball-py" title="Permalink to this headline">¶</a></h3>
-<p>这是一个靠重力感应去控制方块吃点的游戏，触碰边界会一直扣分，规定时间内，吃的点越多，分数越高</p>
+<h3>18.Gravity_Ball.py<a class="headerlink" href="#gravity-ball-py" title="Permalink to this headline">¶</a></h3>
+<p>This is a game that relies on gravity sensing to control the cube to eat points. When the cube touches the boundary, points will be deducted. The more points eaten within the specified time, the higher the score.</p>
 </div>
 <div class="section" id="pattern-py">
-<h3>20.Pattern.py<a class="headerlink" href="#pattern-py" title="Permalink to this headline">¶</a></h3>
-<p>运行代码后，RGB点阵屏上会显示一个有趣的图案。</p>
+<h3>19.Pattern.py<a class="headerlink" href="#pattern-py" title="Permalink to this headline">¶</a></h3>
+<p>After running the code, an interesting pattern will be displayed on the RGB dot matrix screen.</p>
 </div>
 </div>
 </div>
@@ -440,14 +449,14 @@ X Sense HAT会将当前的水平位置记录为accelerometer和gyroscope的不�
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="Get_Started_With_Raspberry_Pi.html" class="btn btn-neutral float-left" title="Get Started With Raspberry Pi" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="get_started_with_raspberry_pi.html" class="btn btn-neutral float-left" title="Get Started With Raspberry Pi" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2021, sunfounder.
+        &#169; Copyright 2021, SunFounder.
 
     </p>
   </div>

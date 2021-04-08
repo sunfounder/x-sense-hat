@@ -2,7 +2,7 @@ Assembling
 ============
 
 .. image:: img/Assembling.jpg
-  :width: 650
+  :width: 800
   :align: center
 
 

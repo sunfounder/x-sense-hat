@@ -19,8 +19,8 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'x-sense-hat'
-copyright = '2021, sunfounder'
+project = 'SunFounder X Sense HAT'
+copyright = '2021, SunFounder'
 author = 'sunfounder'
 
 

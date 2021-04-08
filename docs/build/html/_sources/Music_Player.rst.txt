@@ -1,8 +1,7 @@
 Music Player
 =============
 
-In addition to having X Sense HAT play sound effects or speak on specific occasions, you
-can also add background music to it. 使用摇杆的上下方向键来控制音量大小，左右方向键控制音乐的暂停和继续。
+In this example, the X Sense HAT acts as a Music Player, the up and down buttons of the joystick to control the volume of the Music Player and the left and right buttons to control the pause or play of the music.
 
 TIPS
 -----
@@ -10,7 +9,7 @@ TIPS
 You can choose different background music in the block drop-down menu to let X Sense HAT play.
 
 .. image:: img/tip20.png
-  :width: 470
+  :width: 510
   :align: center
 
 Adjust the volume in the range "0 ~ 100".
@@ -19,13 +18,13 @@ Adjust the volume in the range "0 ~ 100".
   :width: 500
   :align: center
 
-使用这个块可以将输入的参数限制在一个有上限和下限的区间里。
+Use this block to limit the input parameters in a rang(from low() to high()).
 
 .. image:: img/tip61.png
-  :width: 430
+  :width: 460
   :align: center
 
-To achieve conditional judgment of “if” type, you need to use an if do block.
+To achieve conditional judgment of **if** type, you need to use an **if do** block.
 
 .. image:: img/tip31.png
   :width: 150
@@ -33,7 +32,7 @@ To achieve conditional judgment of “if” type, you need to use an if do block
 
 When you need to implement multiple conditional judgments, you will have to change if do into if else do or else if do.
 
-This can be achieved by clicking on the 左上角 icon.
+This can be achieved by clicking on the upper left corner setting icon.
 
 .. image:: img/tip73.png
   :width: 420

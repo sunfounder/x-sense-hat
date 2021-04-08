@@ -1,7 +1,7 @@
 Spirit Level
 ==============
 
-将X Sense HAT做成一个水平仪。通过读取roll角和pitch角的变化，我们可以判断X Sense HAT当前是否位于水平状态。
+Make X Sense HAT a spirit level. By reading the changes in roll angle and pitch angle, we can know whether the X Sense HAT is level.
 
 TIPS
 ------
@@ -13,13 +13,13 @@ of the range of 0~100; then if we map it to the range 0~255 via the map block, t
   :width: 300
   :align: center
 
-逻辑与表达式，如果两个条件都为真，则该表达式的结果为真。
+  Logical expression - and. If both conditions are true, the result is true.
 
 .. image:: img/tip50.png
   :width: 250
   :align: center
 
-使用round块可以约去小数点后的数值，如果小数点第一位小于5，就直接舍去，反之进一位。例如将1.25向下舍入后将变成1。
+The **round** block can be used to round out the value after the decimal point. If the first decimal point is less than 5, it is directly discarded, and vice versa. For example, 1.25 will become 1 after rounding down.
 
 .. image:: img/tip51.png
   :width: 250
@@ -27,6 +27,9 @@ of the range of 0~100; then if we map it to the range 0~255 via the map block, t
 
 EXAMPLE
 ---------
+
+.. note::
+  You can find the full code on the Examples page of Ezblock Studio.
 
 .. image:: img/example12.png
   :width: 760

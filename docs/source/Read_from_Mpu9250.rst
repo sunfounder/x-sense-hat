@@ -1,14 +1,17 @@
 Read from MPU9250
 ===================
 
-校准完MPU9250模块之后，我们来打印MPU9250模块读取到的数据。
+After calibrating the MPU9250 chip, let's print the data read by the MPU9250 chip.
 
 TIPS
 ------
 
-读取MPU9250模块的数据，修改第一个下拉选项，选择accelerometer，gyroscope和magnetometer。
-修改第二个下拉选项，选择x，y和z。例如你选择了accelerometer和x，那么将返回X Sense HAT
-在x轴上的加速度值。
+A block to output the data read by the MPU9250 chip.
+
+* First Parameter: Choose accelerometer, gyroscope or magnetometer.
+* Second Parameter: Choose x, y or z.
+
+For example, if you select accelerometer and x, the acceleration value of X Sense HAT on the x-axis will be returned.
 
 .. image:: img/tip38.png
   :width: 620
@@ -20,8 +23,7 @@ The Print function can print data such as variables and text for easy debugging.
   :width: 250
   :align: center
 
-The data printed by the Print function will appear in the Debug Monitor on the left. 
-In other interfaces, you can also click on the Debug Monitor in the upper right corner.
+After clicking on the **bug** icon in the bottom left corner, the data printed by the print function will appear in the Debug Monitor.
 
 .. image:: img/tip40.png
   :width: 400
@@ -34,100 +36,93 @@ EXAMPLE
   :width: 720
   :align: center
 
-accelerometer和gyroscope的使用帮助
+Accelerometer and Gyroscope
 -----------------------------------
 
-适用于accelerometer和gyroscope的坐标图
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-下图是accelerometer和gyroscope映射到X Sense HAT上的x轴，y轴和z轴,
-在读取accelerometer和gyroscope在不同轴上的值时，我们都需要用到这个坐标图。
+The following diagram shows the coordinate system for the Acelerometer and Gyroscope.
 
 .. image:: img/tip41.png
   :width: 400
   :align: center
 
 .. note::
-  注意不同数轴的符号，如果在x轴的正半轴（x+）上有一个加速度值，那么它的单位为正。
 
-读取accelerometer的值
-^^^^^^^^^^^^^^^^^^^^^^^^^
+  Note the positive direction on each axis.
 
-通过accelerometer，我们可以读取X Sense HAT在不同坐标轴上的加速度值，单位大小为g。
+Accelerometer
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-将X Sense HAT水平放置，此时X Sense HAT会受到一个垂直向下的重力加速度，大小为g（g=9.80665 N/kg）。
+Through the Accelerometer, we can read the acceleration values of the X Sense HAT on the different axes in **g**.
+
+Place the X Sense HAT horizontally. At this time, the X Sense HAT will be subjected to a vertical downward acceleration of gravity, which is **g (g=9.80665 N/kg)**.
 
 .. image:: img/tip42.jpg
-  :width: 400
+  :width: 600
   :align: center
 
-当我们来打印accelerometer 在z轴上的加速度值时，打印窗口会显示一个-1左右的值
-（由于加速度值在 z 负半轴，所以单位为负）。
+When we print the acceleration value on the z-axis, the Debug Monitor will display a value around -1. Since the acceleration value is on the negative half axis of the z-axis, the unit is negative.
 
 .. image:: img/tip62.png
   :width: 720
   :align: center
 
-将X Sense HAT绕着y轴顺时针旋转，此时X Sense HAT受到的重力加速度可以分解成一个x轴上的加速度和
-一个z轴上的加速度，我们可以通过打印accelerometer在x轴上的值和accelerometer在z轴上的值来
-分别获取X Sense HAT在x正半轴上加速度的值（X1）和在z负半轴上加速度的值（Z1）。
+Rotate the X Sense HAT clockwise around the y-axis. At this time, the gravitational acceleration received by the X Sense HAT can be decomposed into an acceleration on the x-axis and
+an acceleration on the z-axis, we can print these 2 accelerations on the Debug Monitor.
 
 .. image:: img/tip63.png
   :width: 720
   :align: center
 
-读取gyroscope的值
-^^^^^^^^^^^^^^^^^^^^
+Gyroscope
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-通过gyroscope，我们可以读取X Sense HAT在不同坐标轴上的角速度值，单位大小为degrees/second，
-单位符号的判断遵循右手螺旋定则，将右手握住数轴，大拇指指向数轴正半轴的方向，
-此时四根手指指向的方向就是对应数轴的角速度值的正方向。
+Through the Gyroscope, we can read the angular velocity values ​​of X Sense HAT on different coordinate axes, the unit size is degrees/second.
+
+The judgment of the unit symbol follows the right-hand spiral rule. Hold the axis with your right hand and the thumb points in the direction of the positive semi-axis.
+
+At this time, the direction pointed by the four fingers is the positive direction of the angular velocity value.
 
 .. image:: img/tip64.jpg
   :width: 400
   :align: center
 
-打印gyroscope在y轴上的角速度值。
+Print the angular velocity value on the y-axis.
 
 .. image:: img/tip65.png
   :width: 720
   :align: center
 
-将X Sense HAT绕着y轴顺时针旋转，由于X Sense HAT的角度发生了变化，所以产生了y轴的角速度值。
-同时打印窗口会显示y轴的角速度值，根据右手螺旋定则可以判断它的单位为正。
+Rotate the X Sense HAT clockwise around the y-axis. Because the angle of the X Sense HAT changes, the angular velocity value of the y-axis is generated and will be printed on Debug Monitor.
+According to the right-hand screw rule, its unit is positive.
 
 .. image:: img/tip44.jpg
   :width: 400
   :align: center
 
-magnetometer的使用帮助
+Magnetometer
 -------------------------
-
-适用于magnetometer的坐标图
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   
-下图是magnetometer映射到X Sense HAT上的x轴，y轴和z轴,在读取magnetometer在不同轴上的值时，
-我们都需要用到这个坐标图。
+The following diagram shows the coordinate system for the Magnetometer.
   
 .. image:: img/tip56.jpg
-  :width: 400
+  :width: 600
   :align: center
 
 .. note::
-  注意不同数轴的符号，如果在X轴的正半轴（x+）上有一个磁场强度值，那么它的单位为正。
 
-读取magnetometer的值
-^^^^^^^^^^^^^^^^^^^^^
+  Note the positive direction on each axis.
 
-通过magnetometer，我们可以读取X Sense HAT在不同坐标轴上的磁场强度，单位大小为15μT。
 
-我们可以把一块磁铁放在X Sense HAT的X正半轴上。
+Through the magnetometer, we can read the magnetic field strength of X Sense HAT on different coordinate axes, the unit size is 15μT.
+
+We can put a magnet on the positive x-axis of the X Sense HAT.
+
 
 .. image:: img/tip66.jpg
-  :width: 400
+  :width: 600
   :align: center
 
-然后打印X Sense HAT在x正半轴上磁场强度的值（单位为正）。
+Then print the value of the magnetic field strength on the positive semi-axis of the x-axis (in positive unit).
 
 .. image:: img/tip67.png
   :width: 720
