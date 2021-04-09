@@ -21,7 +21,7 @@ import sphinx_rtd_theme
 
 project = 'SunFounder X Sense HAT'
 copyright = '2021, SunFounder'
-author = 'sunfounder'
+author = 'GSZ SunFounder'
 
 
 # -- General configuration ---------------------------------------------------

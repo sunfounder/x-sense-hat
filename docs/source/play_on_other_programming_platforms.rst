@@ -1,11 +1,11 @@
-Play On Other Programming Platforms
+Play on Other Programming Platforms
 =====================================
 
-This chapter is used to set up Raspberry Pi, from configure the Raspberry Pi environment to 
-Download and run the sample python code of X-Sense HAT.
+This chapter is used to set up Raspberry Pi, from configure the Raspberry Pi environment to download and run the sample python code of X Sense HAT.
 
-First, you must burn the Ezblock system. If you use the Raspian system, the
-sample python we provide for X-Sense HAT will not be available.
+.. note::
+  You must burn the Ezblock system first(:ref:`Burning System`). If you use Raspberry Pi OS, the sample codes we provided for X Sense HAT will not be available.
+
 
 .. toctree::
   :maxdepth: 1
