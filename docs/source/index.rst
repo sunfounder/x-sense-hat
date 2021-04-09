@@ -1,5 +1,5 @@
-X Sense HAT
-============
+SunFounder X Sense HAT
+=======================
 
 Thanks for choosing our X Sense HAT.
 

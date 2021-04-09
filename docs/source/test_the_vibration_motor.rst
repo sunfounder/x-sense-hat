@@ -9,7 +9,7 @@ TIPS
 To use the remote control function, you need to enter the Bluetooth Control page from the left side of Programming page.
 
 .. image:: img/python1.png
-  :width: 120
+  :width: 80
   :align: center
 
 Here we drag a Slider from the Controllers category, then return to the Programming page.

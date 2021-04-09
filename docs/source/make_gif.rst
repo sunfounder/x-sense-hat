@@ -7,7 +7,7 @@ EXAMPLE
 ----------
 
 .. image:: img/example11.png
-  :width: 650
+  :width: 500
   :align: center
 
 
