@@ -124,9 +124,10 @@ The InvenSense MPU9250 is a System in Package (SiP) that combines two chips: the
 
 Before using the MPU9250 chip, we need to calibrate different chips.
 
-After running the code, place the X Sense HAT horizontally. After 2 seconds, press ``Ctrl`` + ``C`` to exit the operation of the code, and the calibration is completed.
+After running the code, place the X Sense HAT horizontally. After 2 seconds, press the Joystick on the X Sense HAT to confirm, and then press ``Ctrl`` + ``C`` to exit the operation of the code, and the calibration is completed.
 
 The X Sense HAT records the current horizontal position as a 0 degree point on the different axes of the Accelerometer and Gyroscope.
+
 
 8.calibrate_the_magnetometer.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -155,7 +156,9 @@ Finally, rotate the X Sense HAT clockwise around the **z-axis** by 720° and the
   :width: 400
   :align: center
 
-Press ``Ctrl`` + ``C`` to exit the operation of the code, and the calibration is completed.
+Once calibration is complete, press the Joystick on the X Sense HAT to confirm. Then press ``Ctrl`` + ``C`` to exit the operation of the code.
+
+
 
 9.read_from_mpu9250.py
 ^^^^^^^^^^^^^^^^^^^^^^^^^

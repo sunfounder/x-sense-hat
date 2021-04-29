@@ -62,6 +62,8 @@ After running the code, place the X Sense HAT horizontally, turn the A switch on
 
 The X Sense HAT records the current horizontal position as a 0 degree point on the different axes of the Accelerometer and Gyroscope.
 
+Once calibration is complete, press the Joystick on the X Sense HAT to confirm.
+
 **Calibrate Magnetometer**
 
 The figure below is the coordinate system that will be used to calibrate the magnetometer.
@@ -89,6 +91,8 @@ Turn off switch B to complete the calibration.
 .. image:: img/tip37.jpg
   :width: 400
   :align: center
+
+Once calibration is complete, press the Joystick on the X Sense HAT to confirm.
 
 Read from MPU9250
 --------------------
