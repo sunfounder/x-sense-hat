@@ -1,6 +1,5 @@
 from sensor_hat.mpu9250 import MPU9250
 from ezblock import I2C
-from ezblock import print
 from ezblock import delay
 
 i2c=I2C()
