@@ -8,7 +8,7 @@ Required Components
 
 ==================    ======================
 Raspberry Pi          1 * Power Adapter
-1 * Mirco SD Card     1 * Personal Computer
+1 * Micro SD Card     1 * Personal Computer
 ==================    ======================
 
 Procedures
