@@ -14,7 +14,7 @@ Open App Store (iOS/Mac OS X system) or Play Store (Android/Windows/Linux system
   :width: 800
   :align: center
 
-Please get detailed tutorial of Ezblock Studio at: `Get Start with Ezblock Studio <https://docs.ezblock.cc/en/latest/>`_.
+Please get detailed tutorial of Ezblock Studio at: `Get Start with Ezblock Studio <https://docs.sunfounder.com/projects/ezblock3/en/latest/#>`_.
 
 Programming
 --------------
