@@ -22,6 +22,7 @@ Of course, you can also use other programming platforms to program X Sense HAT i
     play_on_ezblock_studio
     play_on_other_programming_platforms
     faq
+    thank-robot
 
 Copyright Notice
 =================

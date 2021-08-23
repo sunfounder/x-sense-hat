@@ -13,7 +13,7 @@ of the range of 0~100; then if we map it to the range 0~255 via the map block, t
   :width: 300
   :align: center
 
-  Logical expression - and. If both conditions are true, the result is true.
+Logical expression - and. If both conditions are true, the result is true.
 
 .. image:: img/tip50.png
   :width: 250
