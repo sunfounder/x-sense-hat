@@ -1,3 +1,5 @@
+.. disqus::
+
 SunFounder X Sense HAT
 =======================
 
