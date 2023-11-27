@@ -29,5 +29,5 @@ When you have a sufficient understanding of X Sense HAT, or when you want to cha
     for_block_user
     for_python_user
 
-
-
+.. disqus::
+    :disqus_identifier: x-sense-hat-ezblock

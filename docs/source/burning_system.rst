@@ -37,3 +37,5 @@ Procedures
       :align: center
 
 
+.. disqus::
+    :disqus_identifier: x-sense-hat-burning

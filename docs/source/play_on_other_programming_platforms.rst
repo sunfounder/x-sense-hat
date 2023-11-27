@@ -14,4 +14,7 @@ This chapter is used to set up Raspberry Pi, from configure the Raspberry Pi env
   programming_python
 
 
+.. disqus::
+    :disqus_identifier: x-sense-hat-other
+
 
