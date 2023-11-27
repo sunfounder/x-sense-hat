@@ -1,5 +1,3 @@
-.. disqus::
-
 SunFounder X Sense HAT
 =======================
 
@@ -36,3 +34,5 @@ without infringing the legal rights of the author and relevant right holders. Fo
 or organization that uses these for commercial profit without permission, the Company reserves the 
 right to take legal action.
 
+.. disqus::
+    :disqus_identifier: x-sense-hat-index

@@ -1,5 +1,3 @@
-.. disqus::
-
 Thank You
 ====================
 
@@ -23,3 +21,5 @@ Now, could you spare a little time to fill out this questionnaire?
 
     After submitting the questionnaire, please go back to the top to view the results.
 
+.. disqus::
+    :disqus_identifier: x-sense-hat-thank
