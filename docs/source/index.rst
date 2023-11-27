@@ -33,3 +33,6 @@ or other non-commercial or nonprofit purposes, under therelated regulations and 
 without infringing the legal rights of the author and relevant right holders. For any individual 
 or organization that uses these for commercial profit without permission, the Company reserves the 
 right to take legal action.
+
+.. disqus::
+    :disqus_identifier: x-sense-hat-thank
