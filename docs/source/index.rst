@@ -35,4 +35,4 @@ or organization that uses these for commercial profit without permission, the Co
 right to take legal action.
 
 .. disqus::
-    :disqus_identifier: x-sense-hat-thank
+    :disqus_identifier: x-sense-hat-index
